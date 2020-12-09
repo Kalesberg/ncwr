@@ -1,0 +1,22 @@
+{
+  "title": "Support",
+  "type": "page",
+  "slug": "/support",
+  "blocks": [
+    {
+      "template": "main-support",
+      "sharedTextButton": {
+        "style": "Blue fill",
+        "article": "",
+        "page": "",
+        "label": "Get support",
+        "type": "",
+        "url": ""
+      },
+      "supportSearchLabel": "Tell us why you're here...",
+      "supportSidebarTitle": "Support",
+      "supportSidebarFooterTitle": "Do you have a question or specific problem?",
+      "supportSidebarFooterText": "We're here to help!"
+    }
+  ]
+}

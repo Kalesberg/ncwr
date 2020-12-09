@@ -1,0 +1,41 @@
+---
+label: 'Footer: Map'
+hide_body: false
+fields:
+- name: google_maps_link
+  type: text
+  config:
+    required: false
+  label: Google Maps Link
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: Label
+  - name: page
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: pages
+        file: 
+        path: 
+    label: Page
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  label: Button
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image

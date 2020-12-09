@@ -1,0 +1,37 @@
+{
+  "blocks": [
+    {
+      "template": "footer-logo",
+      "logo": ""
+    },
+    {
+      "template": "footer-social",
+      "links": [
+
+      ]
+    },
+    {
+      "template": "footer-links",
+      "links": [
+
+      ]
+    },
+    {
+      "template": "footer-map",
+      "button": {
+        "page": [
+
+        ],
+        "label": "",
+        "icon": ""
+      },
+      "google_maps_link": "",
+      "image": ""
+    },
+    {
+      "template": "footer-contact",
+      "heading": "",
+      "address": ""
+    }
+  ]
+}

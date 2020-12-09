@@ -1,0 +1,19 @@
+---
+label: 'Header: Phone'
+hide_body: false
+fields:
+- name: number
+  type: text
+  config:
+    required: false
+  label: Number
+- name: icon
+  type: file
+  config:
+    maxSize: 64
+  label: Icon
+- name: linkto
+  type: text
+  config:
+    required: false
+  label: LinkTo

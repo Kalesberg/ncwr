@@ -1,0 +1,83 @@
+---
+label: 'Content Type: Research Article'
+hide_body: false
+fields:
+- name: contentTypeResearchArticle
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Title
+  - name: date
+    type: datetime
+    label: Date
+    description: ''
+    config:
+      required: true
+      date_format: 
+      time_format: 
+      display_utc: false
+    default: now
+  - name: heroimage
+    type: file
+    config:
+      maxSize: 64
+    label: heroImage
+  - name: tags
+    type: tag_list
+    default: []
+    label: Tags
+  - name: type
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Video
+      - Document
+      - Text
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+  - name: videoUrl
+    type: text
+    config:
+      required: false
+    label: Video Url
+  - name: document
+    type: file
+    config:
+      maxSize: 64
+    label: Document
+  - name: category
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Ongoing studies
+      - Completed studies
+      - Participate in studies
+      - Bio Samples
+      - H.E.A.L.
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Category
+  label: Research Article
+pages:
+- ".forestry/content/articles/sampleResearchArticle.md"
+- ".forestry/content/articles/sampleResearchArticleDocument.md"
+- ".forestry/content/articles/sampleResearchVideo.md"

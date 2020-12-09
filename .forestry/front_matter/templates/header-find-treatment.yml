@@ -1,0 +1,21 @@
+---
+label: 'Header: Find Treatment'
+hide_body: false
+fields:
+- name: label
+  type: text
+  config:
+    required: false
+  label: Label
+- name: page
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: pages
+      file: 
+      path: 
+  label: Page

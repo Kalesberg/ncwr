@@ -1,0 +1,63 @@
+{
+  "title": "Home",
+  "slug": "/",
+  "blocks": [
+    {
+      "template": "main-hero",
+      "slider": true,
+      "heroGroup": [
+        {
+          "image": "/static/fc483f41-c488-47a0-ad8a-77739e98c63f.jpg",
+          "mobileImage": "",
+          "text": "Through medical research and accessible treatment, we’re bringing understanding and hope to the fight against opioid addiction.",
+          "heading": "ANSWERS +\n\nACCESS = HOPE"
+        }
+      ]
+    },
+    {
+      "template": "main-overview-with-media",
+      "heading": "",
+      "largeText": "",
+      "smallText": "",
+      "video": {
+        "title": "",
+        "url": "",
+        "image": ""
+      }
+    },
+    {
+      "template": "main-home-research",
+      "button": {
+        "page": [
+
+        ],
+        "label": "",
+        "icon": ""
+      },
+      "image": "",
+      "heading": "",
+      "body": ""
+    },
+    {
+      "template": "main-testimonial",
+      "button": {
+        "page": [
+
+        ],
+        "label": "",
+        "icon": ""
+      },
+      "image": "",
+      "backgroundImage": "",
+      "quote": "",
+      "text": ""
+    },
+    {
+      "template": "main-option-changer",
+      "title": "",
+      "options": [
+
+      ]
+    }
+  ]
+}

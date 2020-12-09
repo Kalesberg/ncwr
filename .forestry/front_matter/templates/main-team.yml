@@ -1,0 +1,11 @@
+---
+label: 'Main: Team'
+hide_body: false
+fields:
+- name: categories
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Categories

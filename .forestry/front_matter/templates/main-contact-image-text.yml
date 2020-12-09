@@ -1,0 +1,97 @@
+---
+label: 'Main: Contact Image Text'
+hide_body: false
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  default: "/static/00ba7de0-487f-4389-9d46-460ea7de968d.png"
+- name: address
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Address
+- name: finder
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: number
+    type: text
+    config:
+      required: false
+    label: Number
+  - name: linkTo
+    type: text
+    config:
+      required: false
+    label: Link To
+    description: "&lt;a href='tel:________'&gt;&lt;/a&gt;"
+  label: Finder
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: Label
+  - name: anchor
+    type: text
+    config:
+      required: false
+    label: Anchor
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  label: Button
+- name: numbers
+  type: field_group_list
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: number
+    type: text
+    config:
+      required: false
+    label: Number
+  - name: linkTo
+    type: text
+    config:
+      required: false
+    label: Link To
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Numbers

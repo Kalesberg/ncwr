@@ -1,0 +1,52 @@
+---
+label: 'Content Type: Page'
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: The title will appear in the window/tab label after the site name.
+    For the home page, enter "Home"
+  default: Untitled
+- name: slug
+  type: text
+  config:
+    required: false
+  label: Slug
+  description: This is the text after the domain a user would enter to navigate to
+    this page. The slugs '<strong>/</strong>' and '<strong>404</strong>' are reserved
+    so do not use them in places they are not currently used. If nothing is entered
+    here, the slug will become a slug-ified version of the page title.
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - main-home-research
+  - main-testimonial
+  - main-option-changer
+  - main-overview-with-media
+  - main-hero
+  - main-osu-medicine
+  - main-understanding-science
+  - main-foundation
+  - main-deliver-hope
+  - main-team
+  - main-contact
+  - main-latest-progress
+  - main-contact-image-text
+  - main-find-treatment
+  config:
+    min: 
+    max: 
+pages:
+- ".forestry/content/pages/about.json"
+- ".forestry/content/pages/awareness-involvement.json"
+- ".forestry/content/pages/contact.json"
+- ".forestry/content/pages/find-treatment.json"
+- ".forestry/content/pages/home.json"
+- ".forestry/content/pages/page-not-found.json"
+- ".forestry/content/pages/research.json"
+- ".forestry/content/pages/resources.json"
+- ".forestry/content/pages/support.json"

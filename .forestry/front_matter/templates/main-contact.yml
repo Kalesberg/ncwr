@@ -1,0 +1,52 @@
+---
+label: 'Main: Contact'
+hide_body: false
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: methodIcons
+  type: field_group_list
+  fields:
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Method Icons
+- name: arrowDown
+  type: file
+  config:
+    maxSize: 64
+  label: Arrow Down
+- name: checkIcon
+  type: file
+  config:
+    maxSize: 64
+  label: Check Icon
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: Label
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  label: Button
+- name: submitTo
+  type: text
+  config:
+    required: false
+  label: Submit To

@@ -1,0 +1,14 @@
+---
+label: 'Main: Latest Progress'
+hide_body: false
+fields:
+- name: iconLeft
+  type: file
+  config:
+    maxSize: 64
+  label: Icon Left
+- name: iconRight
+  type: file
+  config:
+    maxSize: 64
+  label: Icon Right

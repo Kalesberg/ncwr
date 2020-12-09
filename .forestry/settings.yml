@@ -1,0 +1,65 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: heading
+  label: Content
+- type: directory
+  path: ".forestry/content/pages"
+  label: Pages
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - content-type-page
+- type: directory
+  path: ".forestry/content/articles"
+  label: Articles
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - content-type-article
+- type: directory
+  path: ".forestry/content/support"
+  label: Support
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - content-type-support-video
+  - content-type-support
+- type: document
+  path: ".forestry/content/testimonials.json"
+  label: Testimonials
+- type: document
+  path: ".forestry/content/team.json"
+  label: Team Members
+- type: heading
+  label: Settings
+- type: document
+  path: ".forestry/content/settings/config.json"
+  label: Site Info
+- type: document
+  path: ".forestry/content/settings/contact.json"
+  label: Contact Info
+- type: document
+  path: ".forestry/content/settings/header.json"
+  label: Header
+- type: document
+  path: ".forestry/content/settings/footer.json"
+  label: Footer
+upload_dir: static
+public_path: ''
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: public
+  install_dependencies_command: yarn install
+  preview_docker_image: forestryio/node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: yarn forestry-preview

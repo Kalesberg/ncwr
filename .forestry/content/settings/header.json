@@ -1,0 +1,171 @@
+{
+  "links": [
+    {
+      "label": "Home",
+      "page": ".forestry/content/pages/home.json",
+      "highlighted": false,
+      "hasIcon": false,
+      "icon": ""
+    },
+    {
+      "page": ".forestry/content/pages/awareness-involvement.json",
+      "label": "Awareness & Involvement",
+      "highlighted": false,
+      "hasIcon": false,
+      "icon": ""
+    },
+    {
+      "page": ".forestry/content/pages/research.json",
+      "label": "Research",
+      "highlighted": false,
+      "hasIcon": false,
+      "icon": ""
+    },
+    {
+      "page": ".forestry/content/pages/resources.json",
+      "label": "Resources",
+      "highlighted": false,
+      "hasIcon": false,
+      "icon": ""
+    },
+    {
+      "page": ".forestry/content/pages/find-treatment.json",
+      "label": "Find Treatment",
+      "highlighted": true,
+      "hasIcon": false,
+      "icon": ""
+    }
+  ],
+  "mainLogo": "/static/images/4295ea40-486c-459e-8a42-04a5f8818b44.svg",
+  "searchIcon": "/static/images/search.svg",
+  "donate": {
+    "label": "Donate",
+    "url": "",
+    "icon": "/static/a64654c1-fb2c-446b-9aad-05624d3de104.svg"
+  },
+  "call": {
+    "number": "800-123-4567",
+    "linkTo": "8001234567",
+    "text": "Get help now",
+    "icon": "/static/745bfa79-99e0-4ac3-9c2d-dbe4a9bd38db.svg"
+  },
+  "megaMenu": {
+    "overview": {
+      "links": [
+        {
+          "label": "Areas of focus",
+          "anchorLink": ""
+        },
+        {
+          "label": "Partners",
+          "anchorLink": ""
+        },
+        {
+          "label": "Facility",
+          "anchorLink": ""
+        }
+      ]
+    },
+    "research": {
+      "links": [
+        {
+          "label": "Ongoing studies",
+          "anchorLink": "",
+          "highlights": [
+
+          ]
+        },
+        {
+          "label": "Completed studies",
+          "anchorLink": "",
+          "highlights": [
+
+          ]
+        },
+        {
+          "label": "Participate in studies",
+          "anchorLink": "",
+          "highlights": [
+
+          ]
+        },
+        {
+          "label": "Bio Samples",
+          "anchorLink": "",
+          "highlights": [
+
+          ]
+        },
+        {
+          "label": "H.E.A.L.",
+          "anchorLink": "",
+          "highlights": [
+
+          ]
+        }
+      ]
+    }
+  },
+  "overview": {
+    "links": [
+
+    ]
+  },
+  "research": {
+    "links": [
+
+    ]
+  },
+  "blocks": [
+    {
+      "template": "header-phone",
+      "number": "",
+      "icon": "",
+      "linkto": ""
+    },
+    {
+      "template": "header-search",
+      "icon": ""
+    },
+    {
+      "template": "header-mobile-button",
+      "icon": ""
+    },
+    {
+      "template": "header-megamenu",
+      "overview": {
+        "links": [
+
+        ]
+      },
+      "research": {
+        "links": [
+
+        ]
+      }
+    },
+    {
+      "template": "header-donate",
+      "label": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "template": "header-logo",
+      "logo": ""
+    },
+    {
+      "template": "header-find-treatment",
+      "page": [
+
+      ],
+      "label": ""
+    },
+    {
+      "template": "header-links",
+      "links": [
+
+      ]
+    }
+  ]
+}

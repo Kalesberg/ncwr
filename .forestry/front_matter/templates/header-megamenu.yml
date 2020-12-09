@@ -1,0 +1,68 @@
+---
+label: 'Header: MegaMenu'
+hide_body: false
+fields:
+- name: overview
+  type: field_group
+  config: {}
+  fields:
+  - name: links
+    type: field_group_list
+    fields:
+    - name: label
+      type: text
+      config:
+        required: false
+      label: Label
+    - name: anchorLink
+      type: text
+      config:
+        required: false
+      label: Anchor Link
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Links
+  label: Overview
+- name: research
+  type: field_group
+  config: {}
+  fields:
+  - name: links
+    type: field_group_list
+    fields:
+    - name: label
+      type: text
+      config:
+        required: false
+      label: Label
+    - name: anchorLink
+      type: text
+      config:
+        required: false
+      label: Anchor Link
+    - name: highlights
+      type: field_group_list
+      fields:
+      - name: highlight
+        type: text
+        config:
+          required: false
+        label: Highlight
+      - name: image
+        type: file
+        config:
+          maxSize: 64
+        label: Image
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Highlights
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Links
+  label: Research

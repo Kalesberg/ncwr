@@ -1,0 +1,21 @@
+---
+label: 'Global Settings: Header'
+hide_body: false
+fields:
+- name: blocks
+  type: blocks
+  template_types:
+  - header-phone
+  - header-search
+  - header-mobile-button
+  - header-megamenu
+  - header-donate
+  - header-logo
+  - header-find-treatment
+  - header-links
+  config:
+    min: 
+    max: 
+  label: Blocks
+pages:
+- ".forestry/content/settings/header.json"

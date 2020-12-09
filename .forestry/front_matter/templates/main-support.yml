@@ -1,0 +1,29 @@
+---
+label: 'Main: Support'
+hide_body: true
+fields:
+- name: supportSearchLabel
+  type: text
+  config:
+    required: true
+  label: Search Label
+- name: supportSidebarTitle
+  type: text
+  config:
+    required: true
+  label: Sidebar Title
+- name: supportSidebarFooterTitle
+  type: text
+  config:
+    required: true
+  label: Sidebar Footer Title
+- name: supportSidebarFooterText
+  type: text
+  config:
+    required: true
+  label: Sidebar Footer Text
+- name: supportSidebarFooterButton
+  type: include
+  config: {}
+  template: shared-text-button
+  label: Sidebar Footer Button

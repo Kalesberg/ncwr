@@ -1,0 +1,18 @@
+---
+label: 'Footer: Contact'
+hide_body: false
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: address
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Address

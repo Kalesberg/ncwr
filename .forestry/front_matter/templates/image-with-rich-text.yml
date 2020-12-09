@@ -1,0 +1,29 @@
+---
+label: Image with Rich Text
+hide_body: true
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  default: "/static/placeholder.png"
+  label: Image
+- name: richText
+  type: textarea
+  default: "<h1>Lorem ipsum dolor sit amet.</h1><h2>Consectetur adipiscing elit.</h2><h3>Sed
+    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3><h4>Auctor
+    neque vitae tempus quam pellentesque.</h4><h5>Vulputate enim nulla aliquet porttitor
+    lacus luctus accumsan tortor posuere.</h5><h6>Iaculis at erat pellentesque adipiscing
+    commodo.</h6><p>Senectus et netus et malesuada fames ac turpis egestas sed. Senectus
+    et netus et malesuada fames ac turpis egestas. Dolor sit amet consectetur adipiscing
+    elit ut aliquam. Sed viverra tellus in hac. Vulputate dignissim suspendisse in
+    est ante in nibh. Vitae elementum curabitur vitae nunc sed velit dignissim sodales
+    ut.</p><ul><li><p>Urna nec tincidunt praesent semper.</p></li><li><p>Rutrum tellus
+    pellentesque eu tincidunt tortor.</p></li><li><p>In mollis nunc sed id semper.
+    </p></li></ul><p>Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper.</p>"
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Rich Text

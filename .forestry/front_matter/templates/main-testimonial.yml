@@ -1,0 +1,59 @@
+---
+label: 'Main: Testimonial'
+hide_body: false
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: backgroundImage
+  type: file
+  config:
+    maxSize: 64
+  label: Background Image
+- name: quote
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Quote
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: Label
+  - name: page
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: pages
+        file: 
+        path: 
+    label: Page
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  label: Button

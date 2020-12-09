@@ -1,0 +1,18 @@
+---
+label: 'Global Settings: Footer'
+hide_body: false
+fields:
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - footer-logo
+  - footer-social
+  - footer-links
+  - footer-map
+  - footer-contact
+  config:
+    min: 
+    max: 
+pages:
+- ".forestry/content/settings/footer.json"

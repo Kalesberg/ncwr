@@ -1,0 +1,9 @@
+---
+label: 'Header: Logo'
+hide_body: false
+fields:
+- name: logo
+  type: file
+  config:
+    maxSize: 64
+  label: Logo

@@ -1,0 +1,71 @@
+---
+label: 'Main: Find Treatment'
+hide_body: false
+fields:
+- name: distance_options
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Distance Options
+- name: arrowDown
+  type: file
+  config:
+    maxSize: 64
+  label: Arrow Down
+- name: treatmentIcons
+  type: field_group_list
+  fields:
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Treatment Icons
+- name: treatmentCenters
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: address
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Address
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: number
+    type: text
+    config:
+      required: false
+    label: Number
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+    default: "/static/00ba7de0-487f-4389-9d46-460ea7de968d.png"
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Treatment Centers

@@ -1,0 +1,51 @@
+---
+label: 'Main: Home Research'
+hide_body: false
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  default: "/static/00ba7de0-487f-4389-9d46-460ea7de968d.png"
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: label
+    type: text
+    config:
+      required: false
+    label: Label
+  - name: page
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: pages
+        file: 
+        path: 
+    label: Page
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  label: Button

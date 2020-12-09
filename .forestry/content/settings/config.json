@@ -1,0 +1,13 @@
+{
+  "title": "NCWR",
+  "description": "NCWR",
+  "repositoryUrl": "https://github.com/s8webteam/ncwr",
+  "titleDivider": " | ",
+  "author": "Station8",
+  "metaTags": [
+    "Gatsby",
+    "Forestry.io",
+    "Station8"
+  ],
+  "favicon": "/static/favicon.png"
+}

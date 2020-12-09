@@ -1,0 +1,65 @@
+---
+label: 'Content Type: Support Article'
+hide_body: false
+fields:
+- name: category
+  type: select
+  default: Business
+  config:
+    required: true
+    options:
+    - Business
+    - Home
+    - Any
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: The target audience for the article.
+- name: subcategory
+  type: select
+  default: Billing
+  config:
+    required: true
+    options:
+    - Billing
+    - Connectivity
+    - General Support
+    - My Account
+    - Troubleshooting
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Subcategory
+  description: 'The subcategory for the support article.<br><strong>Hint: </strong>Not
+    finding the subcategory you need? Contact us to have it added!'
+- name: title
+  type: text
+  config:
+    required: true
+  label: Issue
+  description: The issue in the form of a statement. Will show on support CTAs like
+    the element on the bottom of the homepage.
+- name: question
+  type: text
+  config:
+    required: true
+  label: Question
+  description: Issue in the form of a question. This will show on the support page.
+- name: summary
+  type: text
+  config:
+    required: true
+    max: 80
+  label: Summary
+  description: A brief summary of what the article is about.
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Tags will influence which articles show for certain pages and articles.
+    Tags are not required, but related articles will be less relevant.

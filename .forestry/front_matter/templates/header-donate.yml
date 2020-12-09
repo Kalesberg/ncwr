@@ -1,0 +1,19 @@
+---
+label: 'Header: Donate'
+hide_body: false
+fields:
+- name: label
+  type: text
+  config:
+    required: false
+  label: Label
+- name: icon
+  type: file
+  config:
+    maxSize: 64
+  label: Icon
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
