@@ -20,11 +20,10 @@ export default ({ block }) => {
       }
     }
   }`)
-  console.log(block)
   
   return (
     <section className={styles.section}>
-      {block.template}
+      {/* {block.template} */}
     </section>
   )
 }

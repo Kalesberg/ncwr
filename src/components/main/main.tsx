@@ -2,6 +2,7 @@ import React from 'react'
 import { Contact, ContactImageText, DeliverHope, FindTreatment, Foundation, Hero, HomeResearch, LatestProgress, OptionChanger, OsuMedicine, OverviewWithMedia, Team, Testimonial, UnderstandingScience } from './blocks'
 
 import styles from './main.module.scss'
+import 'animate.css/animate.css' 
 
 export default ({ blocks, children }) => {
   
