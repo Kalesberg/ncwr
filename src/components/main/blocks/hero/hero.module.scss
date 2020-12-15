@@ -1,3 +1,163 @@
 .section {
   display: inherit;
 }
+
+.hero-section,
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  // animation-duration: 1s; /* don't forget to set a duration! */
+}
+.mySlides {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  min-height: calc(100vh - 80px);
+  background-position: center;
+  align-items: center;
+  transition: 1s ease-out;
+}
+.hero-section-left {
+  width: 40%;
+  padding: 50px;
+  background-color: #fe5c00;
+  position: relative;
+  opacity: 0.8;
+}
+
+.hero-section-left:after {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  content: "";
+  background: #fe5c00;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: skewX(-16deg);
+}
+
+.hero-section-left h2 {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  color: #fff;
+  font-size: 44px;
+  margin: 0px 0 15px;
+}
+
+.hero-section-left p {
+  position: relative;
+  z-index: 4;
+  opacity: 1;
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+}
+.hero-section-bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 45%;
+  right: -20px;
+}
+
+.hero-box-right > * {
+  color: #fff;
+  line-height: 1.5;
+  position: relative;
+  z-index: 5;
+  transform: skew(0deg, 00deg);
+}
+
+.hero-box-right {
+  padding: 20px 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-box-right p {
+  margin-top: 0;
+}
+
+.hero-box-right.move-box-1 {
+  margin-right: 0;
+  z-index: 3;
+  &:not(.active) {
+    * {
+      color: #000;
+    }
+    &:after {
+      background-color: #dcdcdccc;
+      transform: skewX(-16deg);
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+  }
+  &.active {
+    z-index: 1;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      background: #262626;
+      width:100%;
+      height: 100%;
+      z-index: 0;
+      transform: skewX(-16deg);
+    }
+  }
+}
+
+.bottom-icon img {
+  max-width: 100%;
+}
+
+.bottom-icon {
+  background: #f16c24;
+  position: absolute;
+  left: 20%;
+  bottom: 15px;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  cursor: pointer;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

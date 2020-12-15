@@ -1,53 +1,41 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import styles from './header.module.scss'
-import { Donate, FindTreatment, Links, Logo, MegaMenu, MobileMenuButton, Phone, Search } from './blocks'
+import React from "react"
+import styles from "./header.module.scss"
 
 export default () => {
-  const { site: { siteMetadata: { header: { blocks } } } } = useStaticQuery(graphql`
-  {
-    site {
-      siteMetadata {
-        header {
-          blocks {
-            icon
-            label
-            link
-            linkto
-            logo
-            number
-            template
-          }
-        }
-      }
-    }
-  }`)
   return (
-    <header className={styles.header} id='header'>
-      {blocks && blocks.length ? (
-        <div className={styles.blocks}>
-         {blocks && blocks.map((block, i) => {
-            return block.template === 'header-donate' ? (
-              <Donate key={i} block={block} />
-            ) : block.template === 'header-find-treatment' ? (
-              <FindTreatment key={i} block={block} />
-            ) : block.template === 'header-links' ? (
-              <Links key={i} block={block} />
-            ) : block.template === 'header-logo' ? (
-              <Logo key={i} block={block} />
-            ) : block.template === 'header-megamenu' ? (
-              <MegaMenu key={i} block={block} />
-            ) : block.template === 'header-mobile-button' ? (
-              <MobileMenuButton key={i} block={block} />
-            ) : block.template === 'header-phone' ? (
-              <Phone key={i} block={block} />
-            ) : block.template === 'header-search' ? (
-              <Search key={i} block={block} />
-            
-            ) : <p key={i} className={styles.title}>{block.template} does not exist</p>
-          })}
+    <div className="header-nav">
+      <div className={styles.navbar}>
+        <label htmlFor="togglericon" className={styles.toggler} />
+        <input type="checkbox" id="togglericon" className={styles.toggler} />
+        <div className={styles.brand}>
+          <img src="logo.svg" />
         </div>
-      ) : null}
-    </header>
+        <div className={styles.nav}>
+          <a href="#">About</a>
+          <a href="#">Awareness & Involvement</a>
+          <a href="#">Research</a>
+          <a href="#">Resources</a>
+          <a href="#" className={styles.skewLink}>
+            Find Treatment
+          </a>
+          <div className={styles.rightMenu}>
+            <a href="#">
+              <img src="/heart.svg" />
+              <b>Donate</b>
+            </a>
+            <a href="#">
+              <img src="/phone-outgoing.svg" />
+              <span>
+                Get help now <br />
+                <b>800-123-4567</b>
+              </span>
+            </a>
+            <a href="#" className={styles.searchLink}>
+              <img src="/search.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }

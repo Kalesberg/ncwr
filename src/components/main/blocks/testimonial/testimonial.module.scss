@@ -1,3 +1,41 @@
-.section {
-  display: inherit;
+.testimony-section-inner {
+  width: 100%;
+  margin: 0 0 0 auto;
+  position: relative;
+}
+.testimony-section-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  right: 0;
+  padding: 50px;
+  align-items: flex-start;
+}
+
+.testimony-section-text h2 {
+  font-size: 44px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.testimony-section-text p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+
+.testimony-section-text .btn {
+  background: #262626;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 0;
+  font-size: 18px;
+  color: #fff;
+  img {
+    width: 15px;
+    margin-left: 21px;
+    margin-bottom: 0;
+  }
 }
