@@ -7,7 +7,7 @@
       "slider": false,
       "heroGroup": [
         {
-          "image": "/static/93ecc3df-c8a3-42b4-a768-c28ccb35d95f.png",
+          "image": "/hero-section-1.png",
           "mobileImage": "",
           "heading": "WITH YOUR STRENGTH AND OUR\n\nCOMPASSION, WE WILL\n\nBEAT ADDICTION",
           "text": "NCWR is the nation’s leading center for addiction research, wellness and recovery."
@@ -53,6 +53,20 @@
         "Leadership",
         "Advisory board"
       ]
+    },
+    {
+      "template": "main-testimonial",
+      "button": {
+        "page": [
+
+        ],
+        "label": "",
+        "icon": ""
+      },
+      "image": "",
+      "backgroundImage": "",
+      "quote": "",
+      "text": ""
     },
     {
       "template": "main-osu-medicine",
