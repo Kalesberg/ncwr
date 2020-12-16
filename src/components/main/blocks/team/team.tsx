@@ -1,5 +1,5 @@
 import React from "react"
-import Carousel from "react-elastic-carousel"
+// import Carousel from "react-elastic-carousel"
 import styles from "./team.module.scss"
 
 export default ({ block }) => {
