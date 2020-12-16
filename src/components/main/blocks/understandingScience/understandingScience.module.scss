@@ -1,3 +1,65 @@
 .section {
   display: inherit;
+  background-color: #E5E5E5;
+
+  .step-section-bottom {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .step-section-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .step-section-bottom-left {
+    width: 45%;
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .step-section-bottom-right {
+    width: 45%;
+    h4 {
+      font-size: 22px;
+      padding-bottom: 50px;
+      line-height: 26px;
+    }
+    span {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .btn {
+      margin-top: 60px;
+    }
+  }
+  button.btn {
+    display: flex;
+    background: #ed691e;
+    align-items: center;
+    padding: 15px;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    img {
+      width: 15px;
+      margin-left: 21px;
+    }
+  }
+  .step-section-bottom-imags {
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    position: absolute;
+    bottom: -120px;
+    z-index: 3;
+  }
 }
+

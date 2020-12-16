@@ -6,7 +6,12 @@ export default ({ block }) => {
     <section className={styles.section}>
       <div className={styles.testimonySection}>
         <div className={styles.testimonySectionInner}>
-          <img style={{ marginBottom: 0 }} src="/104D247C.png" />
+          <div className={styles.testimonyImages}>
+            <img src="/testimony-section-bg.png" />
+            <div className={styles.testimonyImagesPng}>
+              <img src="/3DC42E68-80CB-4FB6-8DB1-65605EFE8CA1.png" />
+            </div>
+          </div>
           <div className={styles.testimonySectionText}>
             <h2>
               “I’m Jenny. I’m a <br />

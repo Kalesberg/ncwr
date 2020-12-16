@@ -1,3 +1,115 @@
 .section {
   display: inherit;
+
+  .team-member-section {
+    padding: 150px 0;
+  }
+  .team-member-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .team-member-section-left {
+    background-size: cover;
+    width: 500px;
+    height: 100%;
+    background-repeat: no-repeat;
+    min-height: 520px;
+    background-position: 80% 100%;
+  }
+  .team-member-section-right {
+    width: calc(100% - 500px);
+  }
+  .team-member-teb {
+    ul {
+      padding: 0;
+      display: flex;
+      margin: 0 0 50px;
+      li {
+        list-style: none;
+        position: relative;
+        a {
+          text-decoration: none;
+          padding-right: 30px;
+          font-size: 22px;
+          color: #a2a2a2;
+        }
+        a.active {
+          font-weight: 700;
+          color: #262626;
+          &:after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: #fe5c00;
+            position: absolute;
+            border-radius: 100%;
+            left: 0;
+            bottom: -10px;
+            right: 0;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    padding: 0 60px;
+  }
+  .team-member-teb-body {
+    padding: 0 60px;
+  }
+  #team-member-teb-container {
+    h4 {
+      font-size: 22px;
+      padding-bottom: 30px;
+      line-height: 26px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .slider-container {
+    overflow: hidden;
+    width: 104%;
+    position: relative;
+    margin-left: -4%;
+  }
+  .slider-track {
+    display: flex;
+    transition: 0.2s;
+  }
+  .slider-item {
+    min-width: 265px;
+    height: 300px;
+    display: flex;
+    margin-right: 20px;
+    img {
+      object-fit: cover;
+    }
+  }
+  .slider-buttons {
+    .btn-prev {
+      display: none;
+    }
+    .btn-next {
+      display: none;
+    }
+    .arrow {
+      background-color: #ed691e;
+      display: inline-block;
+      padding: 8px;
+      position: absolute;
+      left: -13%;
+      transform: rotate(181deg);
+      top: 40%;
+      cursor: pointer;
+      img {
+        width: 20px;
+      }
+    }
+  }
+  .wrapper-slider {
+    position: relative;
+  }
+  
 }
