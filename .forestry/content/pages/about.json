@@ -7,7 +7,7 @@
       "slider": false,
       "heroGroup": [
         {
-          "image": "/hero-section-1.png",
+          "image": "/static/93ecc3df-c8a3-42b4-a768-c28ccb35d95f.png",
           "mobileImage": "",
           "heading": "WITH YOUR STRENGTH AND OUR\n\nCOMPASSION, WE WILL\n\nBEAT ADDICTION",
           "text": "NCWR is the nation’s leading center for addiction research, wellness and recovery."
@@ -17,35 +17,70 @@
     {
       "template": "main-deliver-hope",
       "button": {
-        "page": [
-
-        ],
-        "label": "",
+        "page": ".forestry/content/pages/research.json",
+        "label": "See how we’re leading the charge",
         "icon": ""
       },
-      "heading": "",
-      "text": ""
+      "heading": "Need hope? We’re ready.",
+      "text": "In 2019, the State of Oklahoma became the first and only state to sue and win a landmark case against a leading pharmaceutical manufacturer of opioid pain medication. The National Center for Wellness and Recovery (NCWR) at OSU Medicine was founded through $177.5M in funding from this historic settlement. Moreover, through an unprecedented collaboration with Purdue Pharma separate from the court case, NCWR received the world’s largest collection of biosamples and novel research molecules for pain and addiction research representing $1B and 20 years worth of scientific data. Armed with these resources for researching addiction and providing greater access to evidence-based treatments, we are bringing hope to our communities and families devastated by America’s opioid epidemic. "
     },
     {
       "template": "main-option-changer",
-      "title": "",
+      "title": "How we care",
       "options": [
-
+        {
+          "label": "Treatment",
+          "heading": "Helping people where they are.",
+          "button": {
+            "page": ".forestry/content/pages/find-treatment.json",
+            "label": "See treatment options",
+            "icon": ""
+          },
+          "body": "Opioid addiction strikes all kinds of people — including those in rural communities with fewer resources. NCWR is removing stigma and giving greater access to treatment options, including telemedicine.\n"
+        },
+        {
+          "label": "Research",
+          "heading": "Leveraging our resources for research.",
+          "body": "We are using our remarkable pool of biomedical assets to not only fuel existing and new research, but to also help recruit research partners and collaborators from other universities and companies and to support grant applications.\n",
+          "button": {
+            "page": ".forestry/content/pages/research.json",
+            "label": "See the research",
+            "icon": ""
+          }
+        },
+        {
+          "label": "Education",
+          "heading": "Understanding the mechanisms of opioid addiction.",
+          "body": "Did you know the National Institute of Drug Addiction (NIDA) estimates approximately 50% of addiction is rooted in genetics and the other 50% in environmental and social factors? NCWR provides helpful resources for understanding the risks and science of addiction.\n",
+          "button": {
+            "page": ".forestry/content/pages/resources.json",
+            "label": "Explore the resources",
+            "icon": ""
+          }
+        },
+        {
+          "label": "Advocacy",
+          "heading": "Changing the status quo and making a difference.",
+          "body": "Policy. Advocacy. Medical science. Courage. Changing the way we prescribe and use pain medication is a collaborative effort. The way we win is together.\n",
+          "button": {
+            "page": ".forestry/content/pages/awareness-involvement.json",
+            "label": "Speak up with us",
+            "icon": ""
+          }
+        }
       ]
     },
     {
       "template": "main-understanding-science",
       "button": {
-        "page": [
-
-        ],
-        "label": "",
+        "page": ".forestry/content/pages/research.json",
+        "label": "Discover the research",
         "icon": ""
       },
-      "title": "",
-      "body": "",
-      "imageOne": "",
-      "imageTwo": ""
+      "title": "Understanding the science behind addiction helps us understand others.",
+      "body": "Our scientific research into how pain and opioid use affect the human brain is crucial to finding solutions and removing stigma. Our research may also unlock the possibility of non-addictive pain medication alternatives for the future. \n\nThe more we know, the better our treatment options and the greater our compassion for those impacted by opioids.\n",
+      "imageOne": "/listen.jpg",
+      "imageTwo": "/hands.jpg"
     },
     {
       "template": "main-team",
@@ -57,46 +92,42 @@
     {
       "template": "main-testimonial",
       "button": {
-        "page": [
-
-        ],
-        "label": "",
+        "page": ".forestry/content/pages/research.json",
+        "label": "Read the research",
         "icon": ""
       },
-      "image": "",
-      "backgroundImage": "",
-      "quote": "",
-      "text": ""
+      "image": "/hoddieguy.png",
+      "backgroundImage": "/hoodieguy-bg.jpg",
+      "quote": "**“I’m Rick. I’m a father. And I got my son back.”**",
+      "text": "Our medical research is bringing hope to families affected by opioids.\n"
     },
     {
       "template": "main-osu-medicine",
-      "image": "",
-      "address": "",
+      "image": "/campus.jpg",
+      "address": "1111 W. 17th Street Tulsa, OK 74107 ",
       "finder": {
-        "text": "",
-        "number": "",
+        "text": "Physician Finder: ",
+        "number": "918-599-4OSU",
         "linkTo": ""
       },
-      "title": "",
-      "heading": "",
-      "body": "",
+      "title": "OSU Medicine",
+      "heading": "Clinical and academic excellence with a heart for rural medicine.\n",
+      "body": "OSU Medicine is proud to be the medical home of the National Center for Wellness and Recovery. With more than 100 clinic sites across Oklahoma as well as leading-edge telemedicine technologies, OSU Medicine is a premier healthcare provider whose passion for rural communities is part of its mission. From its Tulsa, Oklahoma campus, OSU Medicine teaches the next generation of caring physicians at the OSU College of Osteopathic Medicine. \n",
       "button": {
-        "label": "",
-        "link": "",
+        "label": "Discover OSU Medicine",
+        "link": "https://medicine.okstate.edu/",
         "icon": ""
       }
     },
     {
       "template": "main-foundation",
       "button": {
-        "page": [
-
-        ],
-        "label": ""
+        "page": ".forestry/content/pages/research.json",
+        "label": "Learn more"
       },
-      "heading": "",
-      "body": "",
-      "image": ""
+      "heading": "The nation's largest privately funded medical foundation dedicated to pain and addiction research.",
+      "body": "The National Center for Wellness and Recovery is funded by the National Center for Addiction Studies and Treatment Foundation, created from Oklahoma’s watershed 2019 opioid settlement. The Foundation is driven by a passion to end opioid addiction and is guided by a nine-member board of directors with the president of OSU Medicine serving as its chair.\n",
+      "image": "/sample.jpg"
     }
   ]
 }

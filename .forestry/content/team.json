@@ -1,6 +1,61 @@
 {
   "contentTypeTeamMembersLeadership": [
-
+    {
+      "fullName": "Kyle Simmons Ph.D.",
+      "image": "/team-blank.png",
+      "firstName": "Kyle",
+      "lastName": "Simmons",
+      "title": "Director Biomedical Imaging ",
+      "bio": ""
+    },
+    {
+      "fullName": "Don Kyle Ph.D.",
+      "image": "/team-blank.png",
+      "firstName": "Don",
+      "lastName": "Kyle",
+      "title": "Executive Director Biomedical Research",
+      "bio": ""
+    },
+    {
+      "fullName": "Melenda Knight M.Ed.",
+      "image": "/team-blank.png",
+      "firstName": "Melenda",
+      "lastName": "Knight",
+      "title": "Executive Director Outreach & External Affairs ",
+      "bio": ""
+    },
+    {
+      "fullName": "Kelly Dunn, M.D.",
+      "image": "/team-blank.png",
+      "firstName": "Kelly",
+      "lastName": "Dunn",
+      "title": "Executive Director Clinical Treatment ",
+      "bio": ""
+    },
+    {
+      "fullName": "Julie M. Croff Ph.D., M.P.H.",
+      "image": "/team-blank.png",
+      "firstName": "Julie M.",
+      "lastName": "Croff",
+      "title": "Executive Director Population and Clinical Research",
+      "bio": ""
+    },
+    {
+      "fullName": "Jason Beaman D.O., M.S., M.P.H., FAPA",
+      "image": "/team-blank.png",
+      "firstName": "Jason",
+      "lastName": "Beaman",
+      "title": "Executive Director Training and Education",
+      "bio": ""
+    },
+    {
+      "fullName": "James Hess Ed.D.",
+      "image": "/team-blank.png",
+      "firstName": "James",
+      "lastName": "Hess",
+      "title": "Chief Executive Officer",
+      "bio": ""
+    }
   ],
   "contentTypeTeamMembersAdvisoryBoard": [
 

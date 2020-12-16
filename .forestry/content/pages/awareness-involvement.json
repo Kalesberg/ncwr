@@ -6,14 +6,19 @@
       "template": "main-hero",
       "slider": false,
       "heroGroup": [
-
+        {
+          "image": "/test.jpg",
+          "heading": "**We can all help end opioid addiction.**",
+          "text": "By working together, we can empower our families, neighbors and communities.\n",
+          "mobileImage": ""
+        }
       ]
     },
     {
       "template": "main-overview-with-media",
-      "heading": "",
-      "largeText": "",
-      "smallText": "",
+      "heading": "Action, advocacy and involvement",
+      "largeText": "The National Center for Wellness and Recovery is the global leader in pain and addiction research. There are many ways you can get involved and help. \n",
+      "smallText": "Join us in our mission to inspire hope and to develop innovative, science-driven treatment interventions to improve the lives of those afflicted by pain and substance use disorders.",
       "video": {
         "title": "",
         "url": "",
@@ -22,9 +27,44 @@
     },
     {
       "template": "main-option-changer",
-      "title": "",
+      "title": "Major steps",
       "options": [
+        {
+          "label": "Settlement agreement",
+          "heading": "Settlement agreement and Purdue Pharma investment.",
+          "button": {
+            "page": [
 
+            ],
+            "label": "Learn more",
+            "icon": ""
+          },
+          "body": "In 2019, Oklahoma received an unprecedented $177.5M opioid settlement. Separately, Purdue Pharma gifted NCWR with two decades worth of biosamples and research molecules never before leveraged for research and cannot be reproduced today, to help fast-track R&D.\n"
+        },
+        {
+          "label": "Startup endowment",
+          "heading": "A focused investment of funds for greater impact.",
+          "body": "Rather than scatter dollars around the state, Oklahoma’s opioid settlement created one focused resource: the National Center for Addiction Studies and Treatment Foundation, which funds the NCWR.\n",
+          "button": {
+            "page": [
+
+            ],
+            "label": "Learn more",
+            "icon": ""
+          }
+        },
+        {
+          "label": "Federal funds",
+          "heading": "Federal funds and grants.",
+          "button": {
+            "page": [
+
+            ],
+            "label": "Learn more",
+            "icon": ""
+          },
+          "body": "Only by working together can we end opioid addiction. The National Center for Wellness and Recovery focuses federal funds, grants and collaborations for the greatest impact.\n"
+        }
       ]
     },
     {
@@ -35,16 +75,14 @@
     {
       "template": "main-testimonial",
       "button": {
-        "page": [
-
-        ],
-        "label": "",
+        "page": ".forestry/content/pages/find-treatment.json",
+        "label": "Get treatment now",
         "icon": ""
       },
-      "image": "",
-      "backgroundImage": "",
-      "quote": "",
-      "text": ""
+      "image": "/football.png",
+      "backgroundImage": "/footgall-bg.jpg",
+      "quote": "“I’m Travis. I’m an athlete. And I overcame opioids.”",
+      "text": "If you need answers or treatment we can help you too.\n"
     },
     {
       "template": "main-contact",
