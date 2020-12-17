@@ -79,8 +79,8 @@
     transition: 0.2s;
   }
   .slider-item {
-    min-width: 265px;
-    height: 300px;
+    min-width: 268px !important;
+    height: 300px !important;
     display: flex;
     margin-right: 20px;
     img {

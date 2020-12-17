@@ -1,5 +1,5 @@
-import React from "react"
-// import Carousel from "react-elastic-carousel"
+import React, { useRef } from "react"
+import Carousel from "react-elastic-carousel"
 import styles from "./team.module.scss"
 
 export default ({ block }) => {
@@ -29,6 +29,8 @@ export default ({ block }) => {
       imageUrl: "/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png",
     },
   ]
+
+  const carousel = useRef(null)
 
   return (
     <section className={styles.section}>
@@ -77,38 +79,38 @@ export default ({ block }) => {
             </div>
             <div className={styles.wrapperSlider}>
               <div className={styles.sliderContainer}>
-                <div className={styles.sliderTrack}>
-                  <div className={styles.sliderItem}><img src="/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png" /></div>
-                  <div className={styles.sliderItem}><img src="/715C2EB9-0A0E-44F0-B934-F4478ACA3576.png" /></div>
-                  <div className={styles.sliderItem}><img src="/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png" /></div>
-                  <div className={styles.sliderItem}><img src="/715C2EB9-0A0E-44F0-B934-F4478ACA3576.png" /></div>
-                  <div className={styles.sliderItem}><img src="/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png" /></div>
-                  <div className={styles.sliderItem}><img src="/715C2EB9-0A0E-44F0-B934-F4478ACA3576.png" /></div>
-                  <div className={styles.sliderItem}><img src="/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png" /></div>
-                  <div className={styles.sliderItem}><img src="/715C2EB9-0A0E-44F0-B934-F4478ACA3576.png" /></div>
-                  <div className={styles.sliderItem}><img src="/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png" /></div>
-                </div>
+                <Carousel
+                  ref={carousel}
+                  itemsToShow={3.5}
+                  itemPadding={[15, 15, 15, 15]}
+                  pagination={false}
+                  showArrows={false}
+                >
+                  {images.map(img => (
+                    <img
+                      className={styles.sliderItem}
+                      style={{ width: "240px", height: "200px" }}
+                      src={img.imageUrl}
+                    />
+                  ))}
+                </Carousel>
               </div>
               <div className={styles.sliderButtons}>
-                <button className={styles.btnPrev} id="prev">prev</button>
-                <label className={`${styles.arrow} ${styles.left}`} htmlFor="prev"><img src="right-arrows.svg" alt="left" /></label>
-                <button className={styles.btnNext} id="next" />
-                <label className={`${styles.arrow} ${styles.right}`} htmlFor="next"><img src="right-arrows.svg" alt="right" /></label>
+                <button
+                  className={styles.btnPrev}
+                  id="prev"
+                  onClick={() => carousel.current.slideNext()}
+                >
+                  prev
+                </button>
+                <label
+                  className={`${styles.arrow} ${styles.left}`}
+                  htmlFor="prev"
+                >
+                  <img src="right-arrows.svg" alt="left" />
+                </label>
               </div>
             </div>
-            {/* <Carousel
-              itemsToShow={5}
-              itemPadding={[5, 5, 5, 5]}
-              pagination={false}
-              showArrows={false}
-            >
-              {images.map(img => (
-                <img
-                  style={{ width: "240px", height: "200px" }}
-                  src={img.imageUrl}
-                />
-              ))}
-            </Carousel> */}
           </div>
         </div>
       </div>
