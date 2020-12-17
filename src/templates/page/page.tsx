@@ -22,6 +22,16 @@ query ($title: String!) {
       arrowDown
       backgroundImage
       body
+      options {
+        label
+        heading
+        button {
+          page
+          label
+          icon
+        }
+        body
+      }
       button {
         anchor
         icon

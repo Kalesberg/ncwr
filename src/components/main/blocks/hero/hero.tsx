@@ -20,6 +20,7 @@ export default ({ block }) => {
                 className={`${styles.mySlides} fade animate__animated ${
                   block.heroGroup.length > 1 && "animate__fadeInLeft"
                 }`}
+                key={index}
                 style={{
                   display: slideIndex === index ? "flex" : "none",
                   backgroundImage: `url('${slide.image}')`,

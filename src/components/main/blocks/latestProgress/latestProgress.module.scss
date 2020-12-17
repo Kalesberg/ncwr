@@ -1,3 +1,66 @@
 .section {
   display: inherit;
+  
+  .wrapper-slider {
+    position: relative;
+  }
+
+  .latest-progress {
+    padding: 60px 0;
+  }
+  .latest-progress-inner {
+    padding-left: 150px;
+    position: relative;
+  }
+  .latest-progress-title h2 {
+    font-size: 44px;
+    margin: 0 0 40px;
+    color: #262626;
+  }
+  .slider-track {
+    display: flex;
+    transition: 0.2s;
+  }
+  .slider-item {
+    max-width: 342px !important;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: wrap;
+  }
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  .slider-item-text {
+    padding: 15px 0;
+  }
+  .slider-item-text h2 {
+    font-size: 22px;
+    color: #262626;
+    line-height: 35px;
+    margin-top: 0;
+  }
+  .slider-item-text p {
+    margin-top: 0;
+    color: #262626;
+    font-size: 14px;
+  }
+  .slider-buttons .btn-prev,
+  .slider-buttons .btn-next {
+    display: none;
+  }
+  .slider-buttons .arrow {
+    background-color: #ed691e;
+    display: inline-block;
+    padding: 8px;
+    position: absolute;
+    left: 50px;
+    transform: rotate(181deg);
+    top: 40%;
+    cursor: pointer;
+  }
+  .slider-buttons .arrow img {
+    width: 20px;
+  }
 }

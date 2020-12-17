@@ -1,7 +1,8 @@
 import React from "react"
 import styles from "./optionChanger.module.scss"
 
-export default () => {
+export default ({ block }) => {
+  console.log(block);
   const tabs = [
     {
       name: "Students",
@@ -48,42 +49,44 @@ export default () => {
         "We’re giving first responders more than our gratitude. Educational resources are available to help respond to opioid emergencies and stem the crisis.",
     },
   ]
-  const [activeTab, setActiveTab] = React.useState(1)
+  const [activeTab, setActiveTab] = React.useState(0)
   return (
     <section className={styles.section}>
       <div className={styles.stepSection}>
         <div className={styles.stepSectionInner}>
           {/* Home page tabs using javascript */}
           <div className={styles.tebContInner}>
-            <h3>Education and certification</h3>
+            <h3>{ block.title }</h3>
             <ul>
-              {tabs.map((tab, index) => {
+              {(block.options || []).map((tab, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <a
-                      href="#"
+                      href="javascript:void(0)"
                       className={index === activeTab ? styles.active : ""}
                       onClick={() => setActiveTab(index)}
                     >
-                      {tab.name}
+                      {tab.label}
                     </a>
                   </li>
                 )
               })}
             </ul>
           </div>
-          <div className={styles.tebContBody}>
-            <div>
-              <h4>{tabs[activeTab].title}</h4>
-              <p>{tabs[activeTab].description}</p>
-              <a href="#" className={styles.moveButtonLink}>
-                <span>Learn more </span>
-                <div className={styles.moveBtn}>
-                  <img src="/right-arrows.svg" style={{ marginBottom: 0 }} />
-                </div>
-              </a>
+          {(block.options) && 
+            <div className={styles.tebContBody}>
+              <div>
+                <h4>{block.options[activeTab].heading}</h4>
+                <p>{block.options[activeTab].body}</p>
+                <a href="#" className={styles.moveButtonLink}>
+                  <span>{block.options[activeTab].button.label} </span>
+                  <div className={styles.moveBtn}>
+                    <img src="/right-arrows.svg" style={{ marginBottom: 0 }} />
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
+          }
         </div>
       </div>
     </section>

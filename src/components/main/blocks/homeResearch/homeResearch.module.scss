@@ -1,3 +1,80 @@
 .section {
   display: inherit;
 }
+.progress-section {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.progress-section-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+.progress-section-inner > div {
+  width: 45%;
+}
+.progress-section-left p {
+  color: #afacac;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38px;
+}
+.progress-section-left h3 {
+  margin: 0 0 20px;
+  color: #ed691e;
+  font-size: 22px;
+}
+
+.play-btn {
+  background-color: #ffffff66;
+  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 91px;
+}
+
+.progress-section-videos {
+  display: inline-block;
+  position: relative;
+}
+
+button.btn {
+  display: flex;
+  background: #ed691e;
+  align-items: center;
+  padding: 15px;
+  border: 0;
+  font-size: 18px;
+  color: #fff;
+  img {
+    width: 15px;
+    margin-left: 21px;
+  }
+}
+
+.progress-section-right {
+  h4 {
+    font-size: 22px;
+    padding-bottom: 50px;
+    line-height: 26px;
+  }
+  p {
+    color: #fe5c00;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .btn {
+    margin-top: 60px;
+  }
+  span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
