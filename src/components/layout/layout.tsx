@@ -39,7 +39,9 @@ export default ({ children, title: siteTitle = '', blocks }: layoutProps) => {
       <Main blocks={blocks}>
         {children}
       </Main>
-      <Footer />
+      {(blocks[0].template !== 'main-find-treatment') &&
+        <Footer />
+      }
     </div>
   )
 }

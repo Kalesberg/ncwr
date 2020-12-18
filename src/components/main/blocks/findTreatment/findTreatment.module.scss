@@ -1,3 +1,150 @@
 .section {
   display: inherit;
+
+  .find-treatment-left {
+    width: 400px;
+    padding: 20px;
+  }
+  .find-treatment-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 0;
+  }
+  .find-treatment-right {
+    width: calc(100% - 400px);
+    display: flex;
+  }
+  .search-box input {
+    padding: 10px 10px 10px 40px;
+    border: 0;
+    border-bottom: 6px solid #fe5c00;
+    font-size: 18px;
+    color: #262626;
+    font-weight: bold;
+    width: 200px;
+  }
+  .search-box input:focus {
+    outline: none;
+  }
+  .find-treatment-left-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .find-treatment-dropdown .form-control {
+    background-color: #fe5c00;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .find-treatment-search {
+    margin-right: 25px;
+  }
+
+  .search-box input::placeholder {
+    color: #262626;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .search-box {
+    position: relative;
+  }
+  .search-box img {
+    position: absolute;
+    left: 0;
+    width: 25px;
+    top: 6px;
+  }
+  .find-treatment-leftbox {
+    display: flex;
+    padding: 15px 0;
+  }
+
+  .leftbox-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  .leftbox-image {
+    width: 70px;
+    margin-right: 10px;
+  }
+
+  .leftbox-text h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .leftbox-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .leftbox-icon {
+    width: 150px;
+    border-left: 3px solid #a4a4a4;
+    padding-left: 15px;
+  }
+
+  .leftbox-icon .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+  }
+  .leftbox-icon .icons p {
+    margin: 0;
+  }
+  .find-treatment-map-left {
+    width: 300px;
+    background-color: #e5e5e5;
+  }
+
+  .google-map iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .google-map {
+    width: 100%;
+    height: 100%;
+  }
+  .find-treatment-map {
+    width: calc(100% - 300px);
+  }
+  .map-left-text {
+    padding: 20px;
+  }
+  .map-left-text p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .find-treatment-copy > p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    line-height: 26px;
+    color: #333;
+  }
+  .find-treatment-copy {
+    padding: 40px 80px 20px 20px;
+  }
+  .find-treatment-copy-inner p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  .find-treatment-copy-inner h3 {
+    margin: 0;
+    font-size: 30px;
+    color: #333;
+  }
+  .find-treatment-copy-inner {
+    margin-bottom: 40px;
+  }
+  .find-treatment-map.map-copy {
+    width: 100%;
+  }
 }
