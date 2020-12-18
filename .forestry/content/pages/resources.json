@@ -2,6 +2,20 @@
   "title": "Resources",
   "slug": "/resources",
   "blocks": [
-
+    {
+      "template": "main-hero",
+      "slider": false,
+      "heroGroup": [
+        {
+          "image": "/resource.png",
+          "mobileImage": "",
+          "heading": "WITH YOUR STRENGTH AND OUR\n\nCOMPASSION, WE WILL\n\nBEAT ADDICTION",
+          "text": "NCWR is the nation’s leading center for addiction research, wellness and recovery."
+        }
+      ]
+    },
+    {
+      "template": "main-resource"
+    }
   ]
 }

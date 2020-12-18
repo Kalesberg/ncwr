@@ -9,8 +9,10 @@ import LatestProgress from './latestProgress/latestProgress'
 import OptionChanger from './optionChanger/optionChanger'
 import OsuMedicine from './osuMedicine/osuMedicine'
 import OverviewWithMedia from './overviewWithMedia/overviewWithMedia'
+import Research from './research/research'
+import Resources from './resources/resources'
 import Team from './team/team'
 import Testimonial from './testimonial/testimonial'
 import UnderstandingScience from './understandingScience/understandingScience'
 
-export { Contact, ContactImageText, DeliverHope, FindTreatment, Foundation, Hero, HomeResearch, LatestProgress, OptionChanger, OsuMedicine, OverviewWithMedia, Team, Testimonial, UnderstandingScience }
+export { Contact, ContactImageText, DeliverHope, FindTreatment, Foundation, Hero, HomeResearch, LatestProgress, OptionChanger, OsuMedicine, OverviewWithMedia, Research, Resources, Team, Testimonial, UnderstandingScience }

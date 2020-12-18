@@ -2,6 +2,39 @@
   "title": "Research",
   "slug": "/research",
   "blocks": [
-
+    {
+      "template": "main-hero",
+      "slider": false,
+      "heroGroup": [
+        {
+          "image": "/heroSubPageBg.jpg",
+          "mobileImage": "",
+          "heading": "WITH YOUR STRENGTH AND OUR\n\nCOMPASSION, WE WILL\n\nBEAT ADDICTION",
+          "text": "NCWR is the nation’s leading center for addiction research, wellness and recovery."
+        }
+      ]
+    },
+    {
+      "template": "main-research"
+    },
+    {
+      "template": "main-contact",
+      "image": "/static/f9c143f7-328c-4f29-99e5-51a3fd560b74.png",
+      "methodIcons": [
+        {
+          "icon": "/static/mail-1.svg"
+        },
+        {
+          "icon": "/static/phone-1.svg"
+        }
+      ],
+      "arrowDown": "/static/chevron-down-1.svg",
+      "checkIcon": "/static/check-1.svg",
+      "button": {
+        "label": "Get involved",
+        "icon": "/static/chevrons-right.svg"
+      },
+      "submitTo": ""
+    }
   ]
 }
