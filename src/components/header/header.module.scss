@@ -75,6 +75,25 @@
   margin: 0;
   padding: 8px;
 }
+
+.nav .link.active {
+  color: #262626;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav .link.active:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #fe5c00;
+  position: absolute;
+  border-radius: 100%;
+  left: 50%;
+  bottom: 0;
+  transform: transform(translate(-50%, 0%));
+}
+
 .nav a.skew-link {
   background: #fe5c00;
   color: #fff;
