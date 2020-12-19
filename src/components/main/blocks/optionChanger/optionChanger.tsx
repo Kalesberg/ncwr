@@ -62,9 +62,9 @@ export default ({ block }) => {
                 return (
                   <li key={index}>
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className={index === activeTab ? styles.active : ""}
-                      onClick={() => setActiveTab(index)}
+                      onClick={($event) => { $event.preventDefault();setActiveTab(index);}}
                     >
                       {tab.label}
                     </a>

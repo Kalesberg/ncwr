@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import styles from "./header.module.scss"
 
 export default () => {
@@ -11,13 +12,21 @@ export default () => {
           <img src="logo.svg" />
         </div>
         <div className={styles.nav}>
-          <a href="#">About</a>
-          <a href="#">Awareness & Involvement</a>
-          <a href="#">Research</a>
-          <a href="#">Resources</a>
-          <a href="#" className={styles.skewLink}>
-            Find Treatment
-          </a>
+          <Link activeClassName={styles.active} className={styles.link} to='/about'>
+            <p>About</p>
+          </Link>
+          <Link activeClassName={styles.active} className={styles.link} to='/awareness-involvment'>
+            <p>Awareness & Involvement</p>
+          </Link>
+          <Link activeClassName={styles.active} className={styles.link} to='/research'>
+            <p>Research</p>
+          </Link>
+          <Link activeClassName={styles.active} className={styles.link} to='/resources'>
+            <p>Resources</p>
+          </Link>
+          <Link activeClassName={styles.active} className={styles.link} to='/find-treatment'>
+            <p>Find Treatment</p>
+          </Link>
           <div className={styles.rightMenu}>
             <a href="#">
               <img src="/heart.svg" />
