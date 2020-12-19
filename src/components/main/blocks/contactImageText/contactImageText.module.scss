@@ -1,3 +1,220 @@
 .section {
   display: inherit;
+
+  .medicine-section-inner {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      width: 50%;
+    }
+  }
+  .medicine-section-left {
+    background-color: #fe5c00;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .section-left-text {
+    display: inline-block;
+    padding: 30px 40px;
+    p {
+      margin: 0;
+      color: #fff;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .medicine-section-right {
+    background-color: #262626;
+    padding: 80px;
+    h3 {
+      color: #fe5c00;
+      font-size: 22px;
+      margin-bottom: 50px;
+    }
+    h5 {
+      color: #fff;
+      font-size: 22px;
+      margin-bottom: 50px;
+      margin-top: 0;
+    }
+    p {
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+      line-height: 25px;
+    }
+    .move-button-link {
+      color: #fff;
+      margin-top: 50px;
+      display: flex;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      align-items: center;
+    }
+    .move-btn {
+      width: 40px;
+      height: 40px;
+      background: #fe5c00;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+  .medicine-section-right.color-white {
+    background-color: #fff;
+  }
+  .medicine-section-right.color-white h5,
+  .medicine-section-right.color-white p {
+    color: #262626;
+  }
+  .medicine-section-right.color-white .move-button-link {
+    color: #262626;
+  }
+  .medicine-section-right-inner {
+    margin-top: 40px;
+  }
+
+  .medicine-section-right-inner h3 {
+    margin: 0;
+    color: #262626;
+  }
+
+  .contact-section-inner {
+    position: relative;
+    padding: 100px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #ed691dcc;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .contact-section-from {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .contact-from-title {
+    text-align: center;
+    h2 {
+      font-size: 44px;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+      font-size: 22px;
+      margin: 0 0 30px;
+    }
+  }
+  .contact-from-inner {
+    button.btn {
+      background: #262626;
+      margin-bottom: 30px;
+      width: 48%;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 0;
+      justify-content: space-between;
+      align-items: center;
+      .formGroup {
+        width: 48%;
+        margin-bottom: 30px;
+        label {
+          width: 100%;
+          margin-bottom: 15px;
+          display: block;
+          color: #fff;
+        }
+        input {
+          width: 100%;
+          padding: 15px;
+          border: 0;
+        }
+      }
+    }
+  }
+  .form-control {
+    &:focus {
+      border: 0;
+      outline: none;
+    }
+  }
+  .checkbox-group {
+    label {
+      color: #fff;
+      font-size: 13px;
+      position: relative;
+      cursor: pointer;
+      margin: 0;
+      &:before {
+        content: "";
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 2px solid #f5f5f5;
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 15px;
+      }
+    }
+    input {
+      padding: 0;
+      height: initial;
+      width: initial;
+      margin-bottom: 0;
+      display: none;
+      cursor: pointer;
+    }
+  }
+  .form-group {
+    input {
+      &:checked {
+        + {
+          label {
+            &:after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 2px;
+              left: 9px;
+              width: 6px;
+              height: 14px;
+              border: solid #ed691e;
+              border-width: 0 2px 2px 0;
+              transform: rotate(45deg);
+            }
+            &:before {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-group-inner {
+    display: flex;
+    select.form-control {
+      background: #262626;
+      color: #fff;
+    }
+  }
 }

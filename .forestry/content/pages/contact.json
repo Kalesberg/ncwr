@@ -3,6 +3,18 @@
   "slug": "/contact",
   "blocks": [
     {
+      "template": "main-hero",
+      "slider": true,
+      "heroGroup": [
+        {
+          "image": "/93ecc3df-c8a3-42b4-a768-c28ccb35d95f.png",
+          "mobileImage": "",
+          "text": "Through medical research and accessible treatment, we’re bringing understanding and hope to the fight against opioid addiction.",
+          "heading": "ANSWERS +\n\nACCESS = HOPE"
+        }
+      ]
+    },
+    {
       "template": "main-contact-image-text",
       "image": "",
       "address": "",
