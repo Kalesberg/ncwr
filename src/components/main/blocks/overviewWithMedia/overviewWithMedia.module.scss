@@ -32,11 +32,11 @@
   width: 56px;
   height: 56px;
   position: absolute;
-  top: 31px;
+  top: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 91px;
+  left: 40%;
 }
 
 .progress-section-videos {
@@ -67,8 +67,9 @@ button.btn {
   p {
     color: #fe5c00;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 22px;
+	margin: 30px 0 0;
   }
   .btn {
     margin-top: 60px;
@@ -77,4 +78,22 @@ button.btn {
     font-size: 18px;
     line-height: 22px;
   }
+}
+@media (max-width: 991px) {
+	.progress-section-inner {
+		padding-bottom: 0;
+		& > div {
+		  width: 100%;
+		  padding: 0 20px;
+		  &.progress-section-right {
+			p{
+				margin: 30px 0 30px;
+			}
+			.play-btn{
+				top: 40%;
+				left: 40%;
+			}
+		  }
+		}
+	}
 }

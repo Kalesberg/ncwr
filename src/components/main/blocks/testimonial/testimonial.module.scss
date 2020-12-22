@@ -44,3 +44,23 @@
   position: absolute;
   bottom: 0;
 }
+
+@media (max-width: 991px) {
+	.testimony-section-inner{
+		.testimonyImages{
+			> img{
+				height: 700px;
+			}
+		}
+		.testimony-section-text{
+			padding: 0px 20px 20px 90px;
+			h2{
+				font-size: 28px;
+				margin-bottom: 20px;
+			}
+			p{
+				margin-bottom: 40px;
+			}
+		}
+	}
+}

@@ -12,8 +12,6 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-  // animation-duration: 1s; /* don't forget to set a duration! */
 }
 .mySlides {
   width: 100%;
@@ -22,7 +20,6 @@
   min-height: calc(100vh - 80px);
   background-position: center;
   align-items: center;
-  transition: 1s ease-out;
 }
 .hero-section-left {
   width: 40%;
@@ -160,4 +157,32 @@
   to {
     opacity: 1;
   }
+}
+@media (max-width: 991px) {
+	.hero-section{
+		.mySlides{
+			.hero-section-left{
+				width: 100%;
+				padding: 20px;
+				&:after{
+					display: none;
+				}
+				h2{
+					font-size: 30px;
+				}
+				p{
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+		}
+		.hero-section-bottom{
+			width: 100%;
+			right: 0;
+			.move-box-1{
+				padding: 20px 30px;
+				width: 50%;
+			}
+		}
+	}
 }

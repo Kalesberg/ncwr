@@ -86,8 +86,9 @@ export default ({ block }) => {
                   pagination={false}
                   showArrows={false}
                 >
-                  {images.map(img => (
+                  {images.map((img, i) => (
                     <img
+                      key={i}
                       className={styles.sliderItem}
                       style={{ width: "240px", height: "200px" }}
                       src={img.imageUrl}

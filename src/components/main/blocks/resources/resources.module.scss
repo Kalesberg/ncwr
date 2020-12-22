@@ -178,3 +178,19 @@
     top: 23px;
   }
 }
+@media (max-width: 991px) {
+	.section {
+		.step-section-inner{
+			padding: 60px 20px;
+			.teb-cont-inner.ctm-res-tab {
+				width: 100%;
+				ul{
+					margin: 0;
+				}
+			 }
+			.teb-cont-body.ctm-res{
+				width: 100%;
+			}
+		}
+	}
+}

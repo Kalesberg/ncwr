@@ -22,7 +22,7 @@
 }
 .progress-section-left h3 {
   margin: 0 0 20px;
-  color: #ed691e;
+  color: #fe5c00;
   font-size: 22px;
 }
 
@@ -46,7 +46,7 @@
 
 button.btn {
   display: flex;
-  background: #ed691e;
+  background: #fe5c00;
   align-items: center;
   padding: 15px;
   border: 0;
@@ -77,4 +77,10 @@ button.btn {
     font-size: 18px;
     line-height: 22px;
   }
+}
+@media (max-width: 991px) {
+		.progress-section-inner > div {
+		  width: 100%;
+		  padding: 20px;
+		}
 }

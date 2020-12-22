@@ -148,3 +148,23 @@
     width: 100%;
   }
 }
+@media (max-width: 991px) {
+	.section {
+		.find-treatment-inner {
+			.find-treatment-left{
+				width: 100%;
+			}
+			.find-treatment-right {
+				width: 100%;
+				flex-wrap: wrap;
+				.find-treatment-map-left{
+					width: 100%;
+				}
+				.find-treatment-map{
+					width: 100%;
+				}
+			 }
+		}
+	}
+}
+

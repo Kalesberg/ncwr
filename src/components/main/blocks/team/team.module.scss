@@ -113,3 +113,19 @@
   }
   
 }
+@media (max-width: 991px) {
+	.team-member-section{
+		.team-member-section-right {
+			width: calc(100%);
+			.team-member-teb{
+				padding: 60px 20px 0;
+				ul{
+					margin: 0 0 20px;
+				}
+			}
+		}
+		.team-member-teb-body{
+			padding: 20px 20px 60px;
+		}
+	}
+}

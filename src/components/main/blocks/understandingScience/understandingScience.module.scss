@@ -41,7 +41,7 @@
   }
   button.btn {
     display: flex;
-    background: #ed691e;
+    background: #fe5c00;
     align-items: center;
     padding: 15px;
     border: 0;
@@ -61,5 +61,16 @@
     bottom: -120px;
     z-index: 3;
   }
+}
+
+@media (max-width: 991px) {
+	.step-section-bottom {
+		.step-section-bottom-left{
+			width: 100%;
+		}
+		.step-section-bottom-right{
+			width: 100%;
+		}
+	}
 }
 

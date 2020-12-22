@@ -100,3 +100,16 @@
     }
   }
 }
+@media (max-width: 991px) {
+	.section{
+		.medicine-section-inner{
+			.medicine-section-left{
+				width: 100%;
+			}
+			.medicine-section-right{
+				width: 100%;
+				padding: 60px 20px;
+			}
+		}
+	}
+}

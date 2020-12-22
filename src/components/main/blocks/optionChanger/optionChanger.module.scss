@@ -94,3 +94,15 @@ a.move-button-link span {
   left: -10px;
   top: 23px;
 }
+@media (max-width: 991px) {
+	.step-section-inner{
+		padding: 60px 20px;
+		.teb-cont-body{
+			width: 100%;
+			padding: 30px 0px;
+		}
+		.teb-cont-inner {
+			width: 100%;
+		}
+	}
+}

@@ -34,6 +34,7 @@ export default ({ block }) => {
                   <div className={styles.heroSectionBottom}>
                     {block.heroGroup.map((slideDot, dotIndex) => (
                       <div
+                        key={dotIndex}
                         className={`${styles.heroBoxRight} ${styles.moveBox1} ${
                           dotIndex === slideIndex ? styles.active : ""
                         }`}
