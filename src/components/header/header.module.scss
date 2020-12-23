@@ -43,8 +43,6 @@
   transition: all 0.3s ease;
   opacity: 1;
   height: 100%;
-  padding-top: 55px;
-  width: 100%;
 }
 .nav {
   transition: all 0.5s ease;
@@ -53,7 +51,7 @@
   flex-direction: column;
   box-shadow: 0px 4px 4px 0px #00000088;
   opacity: 0;
-  height: 80px;
+  height: 70px;
 }
 
 
@@ -556,6 +554,12 @@ nav a.link:hover:after {
 	width: 350px;
   }
 }
+.sub-Images{
+	display: none;
+}
+.mobile-Menu{
+	display: none;
+}
 
 @media (min-width: 1200px) {
   .nav {
@@ -584,15 +588,39 @@ nav a.link:hover:after {
 	}
 	.nav{
 		box-shadow: none;
+		padding: 55px 0 0px;
 		a.link{
-			padding: 20px 10px;
+			padding: 10px 40px;
 			p{
 				padding: 0;
+			}
+			&[aria-current="page"]{
+				color: #fa6400;
+				&:after{
+					display: none;
+				}
+			}
+		}
+		.sub-Images{
+			display: block;
+			padding: 40px 40px 0;
+		}
+		.mobile-Menu{
+			display: block;
+			padding: 0 40px;
+			a{
+				display: flex;
+				align-items: center;
+				padding: 10px 0;
+				img{
+					margin: 0 10px 0 0px;
+				}
+				
 			}
 		}
 	}
 	.subnav a{
-		padding: 20px 10px;
+		padding: 20px 40px;
 		display: block;
 	}
 	.right-menu{

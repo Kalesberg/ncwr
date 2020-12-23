@@ -94,7 +94,15 @@ a.move-button-link span {
   left: -10px;
   top: 23px;
 }
+.display-mobile {
+  display: none;
+}
 @media (max-width: 991px) {
+  .display-mobile {
+    display: initial;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
 	.step-section-inner{
 		padding: 60px 20px;
 		.teb-cont-body{
@@ -103,6 +111,36 @@ a.move-button-link span {
 		}
 		.teb-cont-inner {
 			width: 100%;
+			ul{
+				display: flex;
+				li{
+					width: 30px;
+					position: relative;
+					height: 20px;
+					margin: 0;
+					a{
+						text-indent: -9999px;  
+						padding: 0;
+						&:after{
+							content: '';
+							width: 20px;
+							height: 20px;
+							border: 6px solid #fe5c00;
+							position: absolute;
+							left: 0;
+							margin-right: 25px;
+						}
+						&.active{
+							&:after{
+								background-color:#fe5c00;
+							}
+							&:before{
+								display: none;
+							}
+						}
+					}
+				}
+      }
 		}
 	}
 }

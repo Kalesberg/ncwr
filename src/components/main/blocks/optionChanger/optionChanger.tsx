@@ -2,53 +2,6 @@ import React from "react"
 import styles from "./optionChanger.module.scss"
 
 export default ({ block }) => {
-  console.log(block);
-  const tabs = [
-    {
-      name: "Students",
-      title: (
-        <>
-          First responders are in a special position <br />
-          to help.
-        </>
-      ),
-      description:
-        "We’re giving first responders more than our gratitude. Educational resources are available to help respond to opioid emergencies and stem the crisis.",
-    },
-    {
-      name: "First responders",
-      title: (
-        <>
-          First responders are in a special position <br />
-          to help.
-        </>
-      ),
-      description:
-        "We’re giving first responders more than our gratitude. Educational resources are available to help respond to opioid emergencies and stem the crisis.",
-    },
-    {
-      name: "Professionals",
-      title: (
-        <>
-          First responders are in a special position <br />
-          to help.
-        </>
-      ),
-      description:
-        "We’re giving first responders more than our gratitude. Educational resources are available to help respond to opioid emergencies and stem the crisis.",
-    },
-    {
-      name: "Fellows",
-      title: (
-        <>
-          First responders are in a special position <br />
-          to help.
-        </>
-      ),
-      description:
-        "We’re giving first responders more than our gratitude. Educational resources are available to help respond to opioid emergencies and stem the crisis.",
-    },
-  ]
   const [activeTab, setActiveTab] = React.useState(0)
   return (
     <section className={styles.section}>
@@ -73,6 +26,9 @@ export default ({ block }) => {
               })}
             </ul>
           </div>
+          <h2 className={styles.displayMobile}>
+            {block.options[activeTab].label}
+          </h2>
           {(block.options) && 
             <div className={styles.tebContBody}>
               <div>

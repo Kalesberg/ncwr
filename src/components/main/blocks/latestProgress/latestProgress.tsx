@@ -13,6 +13,84 @@ export default ({ block }) => {
             <h2>The latest progress</h2>
           </div>
           <div className={styles.latestProgressSlider}>
+			
+            <div className={styles.mobileSlider}>
+				<div className={styles.sliderItem}>
+				  <img src="/f0e9c945-1f81-4367-bb64-c7668465959c.png" />
+				  <div className={styles.sliderItemText}>
+					<span>
+					  Posted 01/10
+					  <span>
+						<h2>Update title here limit to 50 characters</h2>
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur
+						  adipisicing elit, sed do eiusmod tempor.
+						</p>
+					  </span>
+					</span>
+				  </div>
+				</div>
+				<div className={styles.sliderItem}>
+				  <img src="/f0e9c945-1f81-4367-bb64-c7668465959c.png" />
+				  <div className={styles.sliderItemText}>
+					<span>
+					  Posted 01/10
+					  <span>
+						<h2>Update title here limit to 50 characters</h2>
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur
+						  adipisicing elit, sed do eiusmod tempor.
+						</p>
+					  </span>
+					</span>
+				  </div>
+				</div>
+				<div className={styles.sliderItem}>
+				  <img src="/f0e9c945-1f81-4367-bb64-c7668465959c.png" />
+				  <div className={styles.sliderItemText}>
+					<span>
+					  Posted 01/10
+					  <span>
+						<h2>Update title here limit to 50 characters</h2>
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur
+						  adipisicing elit, sed do eiusmod tempor.
+						</p>
+					  </span>
+					</span>
+				  </div>
+				</div>
+				<div className={styles.sliderItem}>
+				  <img src="/f0e9c945-1f81-4367-bb64-c7668465959c.png" />
+				  <div className={styles.sliderItemText}>
+					<span>
+					  Posted 01/10
+					  <span>
+						<h2>Update title here limit to 50 characters</h2>
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur
+						  adipisicing elit, sed do eiusmod tempor.
+						</p>
+					  </span>
+					</span>
+				  </div>
+				</div>
+				<div className={styles.sliderItem}>
+				  <img src="/f0e9c945-1f81-4367-bb64-c7668465959c.png" />
+				  <div className={styles.sliderItemText}>
+					<span>
+					  Posted 01/10
+					  <span>
+						<h2>Update title here limit to 50 characters</h2>
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur
+						  adipisicing elit, sed do eiusmod tempor.
+						</p>
+					  </span>
+					</span>
+				  </div>
+				</div>
+			</div>
             <div className={styles.wrapperSlider}>
               <div className={styles.sliderContainer}>
                 <div className={styles.sliderTrack}>

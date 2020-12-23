@@ -20,6 +20,9 @@ export default ({ block }) => {
               <li><a href="#"> Training </a> </li>
             </ul>
           </div>
+          <h2 className={styles.displayMobile}>
+            Research
+          </h2>
           <div className={`${styles.tebContBody} ${styles.ctmRes}`}>
             <div id="tab-container">
               <h4 className={styles.innerResTitle}>Film series</h4> 
@@ -118,8 +121,8 @@ export default ({ block }) => {
                 <div className={styles.moveBtn}><img src="/right-arrows.svg" /></div>
               </a>
             </div>
-            <div id="tab-4" style={{visibility: 'hidden', height: 0}}> 
-              <div id="tab-container">
+            <div id="tab-4" style={{display: 'none', height: 0}}> 
+              <div>
                 <h4 className={styles.innerResTitle}>Insurance and financial aid</h4> 
                 <div className={styles.resourceVideo}>
                   <div className={styles.resVideoInner}>
@@ -181,8 +184,8 @@ export default ({ block }) => {
                 <div className={styles.moveBtn}><img src="/right-arrows.svg" /></div>
               </a>
             </div>
-            <div id="tab-6" style={{visibility: 'hidden', height: 0}}> 
-              <div id="tab-container">
+            <div id="tab-6" style={{display: 'none', height: 0}}> 
+              <div>
                 <h4 className={styles.innerResTitle}>Film series</h4> 
                 <div className={styles.resourceVideo}>
                   <div className={styles.resVideoInner}>

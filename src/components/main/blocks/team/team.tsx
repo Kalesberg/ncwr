@@ -77,6 +77,21 @@ export default ({ block }) => {
                 </p>
               </div>
             </div>
+            <div className={styles.wrapperMobile}>
+				<div className={styles.ImageBox}>
+					<img src="/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png" />
+				</div>
+				<div className={styles.ImageBox}>
+					<img src="/715C2EB9-0A0E-44F0-B934-F4478ACA3576.png" />
+				</div>
+				<div className={styles.ImageBox}>
+					<img src="/teamimages-1.png" />
+				</div>
+				<div className={styles.ImageBox}>
+					<img src="/teamimages-2.png" />
+				</div>
+				
+			</div>
             <div className={styles.wrapperSlider}>
               <div className={styles.sliderContainer}>
                 <Carousel
@@ -95,6 +110,7 @@ export default ({ block }) => {
                     />
                   ))}
                 </Carousel>
+				
               </div>
               <div className={styles.sliderButtons}>
                 <button
