@@ -6,12 +6,13 @@ export default () => {
   return (
     <div className={styles.headerNav}>
       <div className={styles.navbar}>
-        
         <input type="checkbox" id="togglericon" className={styles.toggler} />
-		<label htmlFor="togglericon" className={styles.toggler} />
+		    <label htmlFor="togglericon" className={styles.toggler} />
         <div className={styles.brand}>
-          <img src="logo.svg" className={styles.desktopLogo} />
-          <img src="favicon.png" className={styles.mobileLogo} />
+          <Link to='/'>
+            <img src="logo.svg" className={styles.desktopLogo} />
+            <img src="favicon.png" className={styles.mobileLogo} />
+          </Link>
         </div>
         <div className={styles.nav}>
 			<div className={styles.subImages}>

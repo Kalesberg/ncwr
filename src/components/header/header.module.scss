@@ -44,6 +44,9 @@
   opacity: 1;
   height: 100%;
 }
+.desktopLogo {
+  margin-left: 10px;
+}
 .nav {
   transition: all 0.5s ease;
   margin: 0px;
@@ -57,6 +60,7 @@
 
 
 .nav a {
+  font-family: "Noto Sans";
   padding: 10px;
   text-decoration: none;
   color: #000;
@@ -191,6 +195,7 @@ nav a.link:hover:after {
 }
 
 .right-menu {
+  font-family: "Noto Sans";
   display: flex;
   align-items: center;
 }
@@ -588,7 +593,7 @@ nav a.link:hover:after {
 	}
 	.nav{
 		box-shadow: none;
-		padding: 55px 0 0px;
+		padding: 30px 0 0px;
 		a.link{
 			padding: 10px 40px;
 			p{
