@@ -13,16 +13,14 @@ export default ({ block }) => {
             </div>
           </div>
           <div className={styles.testimonySectionText}>
-            <h2>
-              “I’m Jenny. I’m a <br />
-              firefighter. And I’m <br />a survivor.”
+            <h2 className={styles.wrapWhiteSpace}>
+              { block.quote }
             </h2>
-            <p>
-              If you need answers or treatment we <br />
-              can help you too.
+            <p className={styles.wrapWhiteSpace}>
+              { block.text }
             </p>
             <button className={styles.btn}>
-              Discover the research{" "}
+              {block.button.label}
               <img style={{ marginBottom: 0 }} src="/right-arrows-1.svg" />
             </button>
           </div>

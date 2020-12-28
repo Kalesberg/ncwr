@@ -28,16 +28,17 @@
       li {
         list-style: none;
         position: relative;
-        a {
+        a  {
           text-decoration: none;
           padding-right: 30px;
           font-size: 22px;
           color: #a2a2a2;
+          display: block;
         }
         a.active {
           font-weight: 700;
           color: #262626;
-          &:after {
+          &:before {
             content: "";
             width: 7px;
             height: 7px;
@@ -80,7 +81,7 @@
   }
   .slider-item {
     min-width: 268px !important;
-    height: 300px !important;
+    height: 320px !important;
     display: flex;
     margin-right: 20px;
     img {
@@ -130,17 +131,57 @@
 	}
   }
 }
+.display-mobile {
+  display: none;
+}
 @media (max-width: 991px) {
 	.section {
+    .display-mobile {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 0;
+      padding-left: 20px;
+    }
 		.team-member-section{
-			padding: 60px 0;
+		  padding: 20px 0 60px;
 			.team-member-section-right {
 				width: calc(100%);
 				.team-member-teb{
-					padding: 60px 20px 0;
-					ul{
-						margin: 0 0 20px;
-					}
+          padding: 60px 20px 0;
+          ul{
+            display: flex;
+            margin: 0;
+            li{
+              width: 30px;
+              position: relative;
+              height: 20px;
+              margin: 0;
+              a{
+                text-indent: -9999px;  
+                padding: 0;
+                &:after{
+                  content: '';
+                  width: 20px;
+                  height: 20px;
+                  border: 6px solid #fe5c00;
+                  position: absolute;
+                  left: 0;
+                  margin-right: 25px;
+                }
+                &.active{
+                  &:after{
+                    background-color:#fe5c00;
+                  }
+                  &:before{
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+					// ul{
+					// 	margin: 0 0 20px;
+					// }
 				}
 			}
 			.team-member-teb-body{

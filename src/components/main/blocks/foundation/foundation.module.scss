@@ -1,3 +1,115 @@
 .section {
   display: inherit;
+
+  .medicine-section-inner {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      width: 50%;
+    }
+  }
+  .medicine-section-left {
+    background-color: #fe5c00;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .section-left-text {
+    display: inline-block;
+    padding: 30px 40px;
+    p {
+      margin: 0;
+      color: #fff;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .medicine-section-right {
+    background-color: #262626;
+    padding: 80px;
+    h3 {
+      color: #fe5c00;
+      font-size: 22px;
+      margin-bottom: 50px;
+    }
+    h5 {
+      color: #fff;
+      font-size: 22px;
+      margin-bottom: 50px;
+      margin-top: 0;
+    }
+    p {
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+      line-height: 25px;
+    }
+    .move-button-link {
+      color: #fff;
+      margin-top: 50px;
+      display: flex;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      align-items: center;
+    }
+    .move-btn {
+      width: 40px;
+      height: 40px;
+      background: #fe5c00;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+  .medicine-section-right.color-grey {
+    background-color: #e5e5e5;
+    padding: 150px 80px;
+    h5 {
+      color: #262626;
+    }
+    p {
+      color: #262626;
+    }
+    .move-button-link {
+      color: #262626;
+      display: flex;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      align-items: center;
+    }
+
+    .move-btn {
+      width: 40px;
+      height: 40px;
+      background: #fe5c00;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+	.section{
+		.medicine-section-inner{
+			.medicine-section-left{
+				width: 100%;
+			}
+			.medicine-section-right{
+				width: 100%;
+				padding: 60px 20px;
+			}
+		}
+	}
 }

@@ -3,6 +3,7 @@ import Carousel from "react-elastic-carousel"
 import styles from "./team.module.scss"
 
 export default ({ block }) => {
+  const [activeTab, setActiveTab] = React.useState(0)
   const images = [
     {
       imageUrl: "/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png",
@@ -43,17 +44,27 @@ export default ({ block }) => {
           <div className={styles.teamMemberSectionRight}>
             <div className={styles.teamMemberTeb}>
               <ul>
-                <li>
-                  <a href="#" className={styles.active}>
-                    {" "}
-                    Leadership{" "}
-                  </a>{" "}
-                </li>
-                <li>
-                  <a href="#"> Advisory board </a>{" "}
-                </li>
+                {(block.categories || []).map((category, index) => {
+                  return (
+                    <li key={index}>
+                      <a
+                        href="#"
+                        className={index === activeTab ? styles.active : ""}
+                        onClick={$event => {
+                          $event.preventDefault()
+                          setActiveTab(index)
+                        }}
+                      >
+                        {category}{" "}
+                      </a>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
+            <h2 className={styles.displayMobile}>
+              {block.categories[activeTab]}
+            </h2>
             <div className={styles.teamMemberTebBody}>
               <div id="team-member-teb-container">
                 <h4>Team member name | Job title </h4>
@@ -78,20 +89,19 @@ export default ({ block }) => {
               </div>
             </div>
             <div className={styles.wrapperMobile}>
-				<div className={styles.ImageBox}>
-					<img src="/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png" />
-				</div>
-				<div className={styles.ImageBox}>
-					<img src="/715C2EB9-0A0E-44F0-B934-F4478ACA3576.png" />
-				</div>
-				<div className={styles.ImageBox}>
-					<img src="/teamimages-1.png" />
-				</div>
-				<div className={styles.ImageBox}>
-					<img src="/teamimages-2.png" />
-				</div>
-				
-			</div>
+              <div className={styles.ImageBox}>
+                <img src="/CBECD1B3-52DA-4C03-A1DB-C4C1496C59A4.png" />
+              </div>
+              <div className={styles.ImageBox}>
+                <img src="/715C2EB9-0A0E-44F0-B934-F4478ACA3576.png" />
+              </div>
+              <div className={styles.ImageBox}>
+                <img src="/teamimages-1.png" />
+              </div>
+              <div className={styles.ImageBox}>
+                <img src="/teamimages-2.png" />
+              </div>
+            </div>
             <div className={styles.wrapperSlider}>
               <div className={styles.sliderContainer}>
                 <Carousel
@@ -110,7 +120,6 @@ export default ({ block }) => {
                     />
                   ))}
                 </Carousel>
-				
               </div>
               <div className={styles.sliderButtons}>
                 <button

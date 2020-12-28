@@ -18,7 +18,7 @@
       "template": "main-deliver-hope",
       "button": {
         "page": ".forestry/content/pages/research.json",
-        "label": "See how we’re leading the charge",
+        "label": "See how we’re leading \n the charge",
         "icon": ""
       },
       "heading": "Need hope? We’re ready.",
@@ -97,14 +97,14 @@
         "icon": ""
       },
       "image": "/hoddieguy.png",
-      "backgroundImage": "/hoodieguy-bg.jpg",
-      "quote": "**“I’m Rick. I’m a father. And I got my son back.”**",
+      "backgroundImage": "/hoodieguy-bg.png",
+      "quote": "“I’m Rick. I’m a father.\n And I got my son back.”",
       "text": "Our medical research is bringing hope to families affected by opioids.\n"
     },
     {
       "template": "main-osu-medicine",
       "image": "/campus.jpg",
-      "address": "1111 W. 17th Street Tulsa, OK 74107 ",
+      "address": "1111 W. 17th Street \nTulsa, OK 74107 ",
       "finder": {
         "text": "Physician Finder: ",
         "number": "918-599-4OSU",
