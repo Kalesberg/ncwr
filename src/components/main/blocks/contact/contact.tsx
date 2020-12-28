@@ -54,7 +54,7 @@ export default ({ block }) => {
                   </label>
                 </div>
                 <button className={styles.btn}>
-                  Discover the research <img src="/right-arrows-1.svg" />
+                  Get involved <img src="/right-arrows-1.svg" />
                 </button>
               </form>
             </div>
