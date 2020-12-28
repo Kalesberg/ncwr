@@ -15,9 +15,9 @@ export default () => {
           </Link>
         </div>
         <div className={styles.nav}>
-			<div className={styles.subImages}>
-				<img src="text-logo.png" className={styles.TextLogoImage} />
-			</div>
+          <div className={styles.subImages}>
+            <img src="text-logo.png" className={styles.TextLogoImage} />
+          </div>
           <Link activeClassName={styles.active} className={styles.link} to='/about'>
             <p>About</p>
           </Link>
