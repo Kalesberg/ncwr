@@ -595,9 +595,10 @@ nav a.link:hover:after {
 		box-shadow: none;
 		padding: 30px 0 0px;
 		a.link{
-			padding: 10px 40px;
+			padding: 7px 40px;
 			p{
-				padding: 0;
+        padding: 0;
+        font-weight: bold;
 			}
 			&[aria-current="page"]{
 				color: #fa6400;
@@ -608,15 +609,19 @@ nav a.link:hover:after {
 		}
 		.sub-Images{
 			display: block;
-			padding: 40px 40px 0;
+			padding: 60px 0px 15px 31px;
 		}
 		.mobile-Menu{
 			display: block;
-			padding: 0 40px;
+      padding: 0 40px;
+      margin-top: 20px;
 			a{
 				display: flex;
 				align-items: center;
-				padding: 10px 0;
+        padding: 7px 0;
+        color: #262626;
+        font-size: 18px;
+        font-weight: 400;
 				img{
 					margin: 0 10px 0 0px;
 				}
@@ -625,7 +630,8 @@ nav a.link:hover:after {
 		}
 	}
 	.subnav a{
-		padding: 20px 40px;
+    font-weight: bold;
+		padding: 8px 40px;
 		display: block;
 	}
 	.right-menu{

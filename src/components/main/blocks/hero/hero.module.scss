@@ -120,18 +120,20 @@
 }
 
 .bottom-icon img {
-  max-width: 100%;
+  width: 14px;
 }
 
 .bottom-icon {
-  background: #f16c24;
+  background: #fe5c00;
   position: absolute;
   left: 20%;
   bottom: 15px;
-  width: 30px;
-  height: 30px;
-  padding: 8px;
+  width: 50px;
+  height: 51px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Fading animation */
 .fade {

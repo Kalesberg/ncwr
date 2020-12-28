@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styles from "./footer.module.scss"
 
 export default () => {
@@ -8,20 +9,20 @@ export default () => {
         <div className={styles.footerLeft}>
           <div className={styles.footerMenu}>
             <ul>
-              <li>
+              <Link to='/about'>
                 <a href="#">About</a>
+              </Link>
+              <li>
+                <Link to='/awareness-involvment'>Awareness and involvement</Link>
               </li>
               <li>
-                <a href="#">Awareness and involvement</a>
+                <Link to='/#'>Research</Link>
               </li>
               <li>
-                <a href="#">Research</a>
+                <Link to='/resources'>Resources</Link>
               </li>
               <li>
-                <a href="#">Resources</a>
-              </li>
-              <li>
-                <a href="#">Find treatment</a>
+                <Link to='/find-treatment'>Find treatment</Link>
               </li>
             </ul>
           </div>

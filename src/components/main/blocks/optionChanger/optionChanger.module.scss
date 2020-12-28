@@ -24,6 +24,7 @@
 
 .step-section ul li a {
   font-size: 30px;
+  font-weight: bold;
   color: #a2a2a2;
   text-decoration: none;
   padding: 10px;
@@ -50,7 +51,7 @@ a.move-button-link {
 }
 
 a.move-button-link img {
-  width: 20px;
+  width: 12px;
 }
 
 a.move-button-link span {
@@ -80,7 +81,6 @@ a.move-button-link span {
 }
 .step-section ul li a.active {
   color: #262626;
-  font-weight: 500;
   position: relative;
 }
 

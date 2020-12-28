@@ -74,14 +74,11 @@ export default () => {
 			<div className={styles.mobileMenu}>
 				 <a href="#">
 				  <img src="/heart.svg" />
-				  <b>Donate</b>
+				  Donate
 				</a>
 				<a href="#">
 				  <img src="/phone-outgoing.svg" />
-				  <span>
-					Get help now <br />
-					<b>800-123-4567</b>
-				  </span>
+				  <span>800-123-4567</span>
 				</a>
 			</div>
           
