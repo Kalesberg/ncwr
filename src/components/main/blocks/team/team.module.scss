@@ -79,13 +79,13 @@
     display: flex;
     transition: 0.2s;
   }
+  
   .slider-item {
-    min-width: 268px !important;
-    height: 320px !important;
+    height: 280px !important;
     display: flex;
-    margin-right: 20px;
-    img {
-      object-fit: cover;
+	object-fit: cover;
+    &:focus{
+		outline: none;
     }
   }
   .slider-buttons {
@@ -96,7 +96,7 @@
       display: none;
     }
     .arrow {
-      background-color: #ed691e;
+      background-color: #fe5c00;
       display: inline-block;
       padding: 8px;
       position: absolute;
@@ -105,7 +105,7 @@
       top: 40%;
       cursor: pointer;
       img {
-        width: 20px;
+        width: 14px;
       }
     }
   }

@@ -25,6 +25,9 @@
     max-width: 342px !important;
     display: flex;
     flex-wrap: wrap;
+	&:focus{
+		outline: none;
+	}
   }
   .slider-container {
     overflow: hidden;
@@ -50,7 +53,7 @@
     display: none;
   }
   .slider-buttons .arrow {
-    background-color: #ed691e;
+    background-color: #fe5c00;
     display: inline-block;
     padding: 8px;
     position: absolute;
@@ -60,7 +63,7 @@
     cursor: pointer;
   }
   .slider-buttons .arrow img {
-    width: 20px;
+    width: 14px;
   }
 }
 .mobile-Slider{
@@ -76,7 +79,7 @@
 			}
 		}
 		.mobile-Slider{
-			display: none;
+			display: block;
 		}
 	}
 }

@@ -32,12 +32,34 @@
     align-items: center;
   }
 
-  .find-treatment-dropdown .form-control {
-    background-color: #fe5c00;
-    color: #fff;
-    border: 0;
-    padding: 10px;
-    font-size: 18px;
+  .find-treatment-dropdown {
+	    position: relative;
+	.form-control {
+		background-color: #fe5c00;
+		color: #fff;
+		border: 0;
+		padding: 10px 40px 10px  15px;
+		font-size: 18px;
+		outline: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	&:after{
+		content: '';
+		height: 10px;
+		width: 10px;
+		border-style: solid;
+		border-color: white;
+		border-width: 0px 2px 2px 0px;
+		transform: rotate(45deg);
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		z-index: 0;
+		pointer-events: none;
+	}
+	
   }
   .find-treatment-search {
     margin-right: 25px;
@@ -157,13 +179,21 @@
 			.find-treatment-right {
 				width: 100%;
 				flex-wrap: wrap;
+				flex-direction: column-reverse;
 				.find-treatment-map-left{
 					width: 100%;
+					background-color: #fff;
 				}
 				.find-treatment-map{
 					width: 100%;
+					 iframe{
+						min-height: 350px;
+					 }
 				}
-			 }
+			}
+			.find-treatment-leftbox {
+				display: none;
+			}
 		}
 	}
 }

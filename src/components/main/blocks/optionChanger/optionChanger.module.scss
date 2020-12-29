@@ -20,6 +20,7 @@
 
 .step-section ul li {
   list-style: none;
+  margin: 0;
 }
 
 .step-section ul li a {
@@ -27,7 +28,7 @@
   font-weight: bold;
   color: #a2a2a2;
   text-decoration: none;
-  padding: 10px;
+  padding: 8px 10px;
   display: block;
 }
 .teb-cont-inner {
@@ -51,7 +52,7 @@ a.move-button-link {
 }
 
 a.move-button-link img {
-  width: 12px;
+  width: 14px;
 }
 
 a.move-button-link span {
