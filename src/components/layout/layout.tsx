@@ -38,10 +38,10 @@ export default ({ children, title: siteTitle = '', blocks }: layoutProps) => {
       <Header />
       <Main blocks={blocks}>
         {children}
+        {(blocks[0].template !== 'main-find-treatment') &&
+          <Footer />
+        }
       </Main>
-      {(blocks[0].template !== 'main-find-treatment') &&
-        <Footer />
-      }
     </div>
   )
 }

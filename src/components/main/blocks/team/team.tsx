@@ -46,14 +46,16 @@ export default ({ block }) => {
               <ul>
                 {(block.categories || []).map((category, index) => {
                   return (
-                    <li key={index}>
+                    <li
+                      key={index}
+                      onClick={$event => {
+                        $event.preventDefault()
+                        setActiveTab(index)
+                      }}
+                    >
                       <a
                         href="#"
                         className={index === activeTab ? styles.active : ""}
-                        onClick={$event => {
-                          $event.preventDefault()
-                          setActiveTab(index)
-                        }}
                       >
                         {category}{" "}
                       </a>

@@ -9,49 +9,43 @@
   --navbar-font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 .header-nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  z-index: 99;
+  min-height: 70px;
+  position: relative;
 }
 .navbar {
-	display: flex;
-	padding: 0;
-	input[type="checkbox"] {
-		visibility: hidden;
-		height: 0;
-		width: 0;
-		margin: 0;
-		&:after {
-		  content: "☰";
-		  position: absolute;
-		  visibility: visible;
-		  color: #fe5c00;
-		  font-size: 2rem;
-		  width: 1.8rem;
-		  height: 1.8rem;
-		  text-align: center;
-		  margin: 0;
-		  padding: 0;
-		  line-height: 1.8rem;
-		  border-radius: 4px;
-		  border: 2px solid #ffffff00;
-		  z-index: 99;
-		  right: 10px;
-		  top: 15px;
-		}
-		
-	}
+  display: flex;
+  padding: 0;
+  input[type="checkbox"] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    &:after {
+      content: "☰";
+      position: absolute;
+      visibility: visible;
+      color: #fe5c00;
+      font-size: 2rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8rem;
+      border-radius: 4px;
+      border: 2px solid #ffffff00;
+      z-index: 99;
+      right: 10px;
+      top: 15px;
+    }
+  }
 }
 .navbar input:checked ~ div.nav {
   visibility: visible;
   transition: all 0.3s ease;
   opacity: 1;
-	height: 100vh;
-    width: 100%;
+  height: calc(100vh-70px);
+  width: 100%;
 }
 .desktopLogo {
   margin-left: 10px;
@@ -63,11 +57,20 @@
   flex-direction: column;
   box-shadow: 0px 4px 4px 0px #00000088;
   opacity: 0;
-  height: 70px;
+  white-space: nowrap;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -9999px;
+  // width: 100vw;
+  bottom: 0;
+  background: #fff;
+  overflow-y: auto;
+  max-height: 100vh;
 }
-
-
-
+.navbar input:checked ~ .nav {
+  left: 0 !important;
+}
 .nav a {
   font-family: "Noto Sans";
   padding: 10px;
@@ -83,12 +86,6 @@
   margin: 0;
   padding: 8px;
 }
-
-// .nav .link.active {
-//   color: #262626;
-//   font-weight: 500;
-//   position: relative;
-// }
 
 .nav a.link:after {
   content: "";
@@ -107,37 +104,35 @@
 .nav a.link {
   padding: 30px 10px;
   position: relative;
-	&[aria-current="page"]{
-		color: #fa6400;
-		&:after{
-			display: block;
-		}
-	}
-	&:hover{
-		&:after{
-			display: block;
-		}
-	}
-	&:after {
-		content: '';
-		width: 8px;
-		height: 8px;
-		background-color: #fe5c00;
-		position: absolute;
-		bottom: 20px;
-		border-radius: 50%;
-		margin: 0 auto;
-		left: 0;
-		right: 0;
-		display: none;
+  &[aria-current="page"] {
+    color: #fa6400;
+    &:after {
+      display: block;
+    }
+  }
+  &:hover {
+    &:after {
+      display: block;
+    }
+  }
+  &:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #fe5c00;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: none;
   }
 }
 
 nav a.link:hover:after {
   display: block;
 }
-
-
 
 .navbar form {
   display: flex;
@@ -167,9 +162,9 @@ nav a.link:hover:after {
   background-color: var(--navbar-background-color);
   visibility: visible;
   top: 12px;
-	left: 10px;
-	width: 50px;
-	z-index: 99;
+  left: 10px;
+  width: 50px;
+  z-index: 99;
 }
 .brand-icon {
   font-size: 1.8rem;
@@ -193,20 +188,21 @@ nav a.link:hover:after {
   display: flex;
   align-items: center;
   padding: 30px 5px;
-      text-decoration: none;
-    color: #000;
-	p{
-		margin: 0;
-	}
-	&:link{
-	
-	}
+  text-decoration: none;
+  color: #000;
+  p {
+    margin: 0;
+  }
+  &:link {
+  }
 }
 
 .right-menu {
   font-family: "Noto Sans";
   display: flex;
   align-items: center;
+  z-index: 1;
+  white-space: nowrap;
 }
 
 .right-menu img {
@@ -256,6 +252,10 @@ nav a.link:hover:after {
   transform: skewX(-16deg);
 }
 @media (min-width: 991px) {
+  .header-nav {
+    height: 100px;
+  }
+
   .navbar #togglericon:checked ~ div.nav,
   .navbar #togglericon ~ div.nav {
     visibility: visible;
@@ -281,6 +281,7 @@ nav a.link:hover:after {
   }
 
   .nav {
+    position: unset;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -288,7 +289,9 @@ nav a.link:hover:after {
     top: 0;
     opacity: 1;
     box-shadow: none;
-    background-color: #ffffff00; /* transparent */
+    background-color: transparent;
+    z-index: 1;
+    overflow: hidden;
   }
 
   .at-center {
@@ -352,7 +355,7 @@ nav a.link:hover:after {
     white-space: nowrap;
     height: 40px;
     top: 0;
-	width: 350px;
+    width: 350px;
     justify-content: flex-start;
   }
 }
@@ -456,8 +459,8 @@ nav a.link:hover:after {
   color: #fff;
   z-index: 2;
 }
-.subnav a{
-	padding: 30px 5px;
+.subnav a {
+  padding: 30px 5px;
 }
 
 .image-box-bottom p {
@@ -472,6 +475,7 @@ nav a.link:hover:after {
   .navbar #togglericon:checked ~ div.nav,
   .navbar #togglericon ~ div.nav {
     visibility: visible;
+    left: 0;
   }
 
   .navbar {
@@ -565,117 +569,115 @@ nav a.link:hover:after {
     white-space: nowrap;
     height: 40px;
     top: 0;
-	width: 350px;
+    width: 350px;
   }
 }
-.sub-Images{
-	display: none;
+.sub-Images {
+  display: none;
 }
-.mobile-Menu{
-	display: none;
+.mobile-Menu {
+  display: none;
 }
 
 @media (min-width: 1200px) {
   .nav {
-    justify-content: flex-end;
+    // justify-content: flex-end;
   }
 }
 @media (min-width: 992px) {
-	.mobileLogo{
-		display: none;
-	}
+  .mobileLogo {
+    display: none;
+  }
 }
 @media (max-width: 1400px) {
-	.nav a.link {
-		padding: 30px 5px;
-		p{
-			padding: 8px 4px;
-		}
-	}
+  .nav a.link {
+    padding: 30px 5px;
+    p {
+      padding: 8px 4px;
+    }
+  }
 }
 @media (max-width: 1024px) {
-	
 }
 @media (max-width: 991px) {
-	.desktopLogo{
-		display: none;
-	}
-	.nav{
-		box-shadow: none;
-		padding: 30px 0 0px;
-		a.link{
-			padding: 20px 40px;
-			p{
+  .desktopLogo {
+    display: none;
+  }
+  .nav {
+    box-shadow: none;
+    padding: 30px 0 0px;
+    a.link {
+      padding: 20px 40px;
+      p {
         padding: 0;
         font-weight: bold;
-			}
-			&[aria-current="page"]{
-				color: #fa6400;
-				&:after{
-					display: none;
-				}
-			}
-		}
-		.sub-Images{
-			display: block;
-			padding: 60px 0px 15px 31px;
-		}
-		.mobile-Menu{
-			display: block;
+      }
+      &[aria-current="page"] {
+        color: #fa6400;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .sub-Images {
+      display: block;
+      padding: 60px 0px 15px 31px;
+    }
+    .mobile-Menu {
+      display: block;
       padding: 0 40px;
       margin-top: 20px;
-			a{
-				display: flex;
-				align-items: center;
+      a {
+        display: flex;
+        align-items: center;
         padding: 20px 0;
         color: #262626;
         font-size: 18px;
         font-weight: 400;
-				img{
-					margin: 0 10px 0 0px;
-				}
-				
-			}
-		}
-	}
-	.subnav a{
+        img {
+          margin: 0 10px 0 0px;
+        }
+      }
+    }
+  }
+  .subnav a {
     font-weight: bold;
-		padding: 20px 40px;
-		display: block;
-	}
-	.right-menu{
-		position: absolute;
-		right: 42px;
-		top: 0;
-		span, b{
-			display: none;
-		}
-		a{
-			padding: 23px 5px;
-		}
-		img{
-			margin: 0 0px;
-		}
-	}
-	.subnav-content {
-		.subnav-content-inner {
-			flex-wrap: wrap;
-			& > div {
-			  width: 100%;
-			}
-			.subnav-content-left{
-				padding: 20px;
-			}
-			.subnav-content-right{
-				
-				.subnav-content-image-box {
-					min-height: 180px;
-					.image-box-bottom{
-						width: 100%;
-						padding: 20px 20px;
-					}
-				}
-			}
-		}
-	}
+    padding: 20px 40px;
+    display: block;
+  }
+  .right-menu {
+    position: absolute;
+    right: 42px;
+    top: 0;
+    span,
+    b {
+      display: none;
+    }
+    a {
+      padding: 23px 5px;
+    }
+    img {
+      margin: 0 0px;
+    }
+  }
+  .subnav-content {
+    .subnav-content-inner {
+      flex-wrap: wrap;
+      & > div {
+        width: 100%;
+      }
+      .subnav-content-left {
+        padding: 20px;
+      }
+      .subnav-content-right {
+        .subnav-content-image-box {
+          min-height: 180px;
+          .image-box-bottom {
+            width: 100%;
+            padding: 20px 20px;
+          }
+        }
+      }
+    }
+  }
 }

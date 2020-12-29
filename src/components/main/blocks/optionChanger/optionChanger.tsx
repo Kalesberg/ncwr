@@ -13,11 +13,10 @@ export default ({ block }) => {
             <ul>
               {(block.options || []).map((tab, index) => {
                 return (
-                  <li key={index}>
+                  <li key={index} onClick={($event) => { $event.preventDefault();setActiveTab(index);}}>
                     <a
                       href="#"
                       className={index === activeTab ? styles.active : ""}
-                      onClick={($event) => { $event.preventDefault();setActiveTab(index);}}
                     >
                       {tab.label}
                     </a>
