@@ -3,36 +3,33 @@
   "slug": "/contact",
   "blocks": [
     {
-      "template": "main-hero",
-      "slider": true,
-      "heroGroup": [
-        {
-          "image": "/93ecc3df-c8a3-42b4-a768-c28ccb35d95f.png",
-          "mobileImage": "",
-          "text": "Through medical research and accessible treatment, we’re bringing understanding and hope to the fight against opioid addiction.",
-          "heading": "ANSWERS +\n\nACCESS = HOPE"
-        }
-      ]
-    },
-    {
       "template": "main-contact-image-text",
-      "image": "",
-      "address": "",
+      "image": "/C6936D75-21D1-4562-BE1F-B417817370ED.png",
+      "address": "1111 W. 17th Street Tulsa, OK 74107 \n\nPhysician Finder: 918-599-4OSU",
       "finder": {
         "text": "",
         "number": "",
         "linkTo": ""
       },
-      "heading": "",
-      "body": "",
       "button": {
-        "label": "",
-        "anchor": "",
-        "icon": ""
+        "label": "Talk to someone today",
+        "icon": "",
+        "anchor": ""
       },
       "numbers": [
-
-      ]
+        {
+          "text": "Project ECHO",
+          "number": "000-000-0000",
+          "linkTo": ""
+        },
+        {
+          "text": "Tele Health ",
+          "number": "000-000-0000",
+          "linkTo": ""
+        }
+      ],
+      "heading": "We are here to help, wherever you are in your journey to recovery.",
+      "body": "Find the treatment you need and the understanding you deserve. We offer innovative treatment options with a growing number of access points and virtual medicine to meet you where you are. Our goal is to ensure no community or individual is left behind on their treatment path. \n"
     },
     {
       "template": "main-contact",
