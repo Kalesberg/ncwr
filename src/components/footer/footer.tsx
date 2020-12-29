@@ -10,7 +10,7 @@ export default () => {
           <div className={styles.footerMenu}>
             <ul>
               <Link to="/about">
-                <a href="#">About</a>
+                About
               </Link>
               <li>
                 <Link to="/awareness-involvment">

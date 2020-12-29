@@ -38,6 +38,11 @@ query ($title: String!) {
         label
         link
       }
+      numbers {
+        text
+        number
+        linkTo
+      }
       categories
       checkIcon
       finder {

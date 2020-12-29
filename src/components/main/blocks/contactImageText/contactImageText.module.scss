@@ -1,5 +1,9 @@
 .section {
   display: inherit;
+  
+  .wrap-white-space {
+    white-space: pre-wrap;
+  }
 
   .medicine-section-inner {
     display: flex;
