@@ -98,21 +98,27 @@
   margin: 0 auto;
   left: 0;
   right: 0;
-  display: none;
+  opacity:0;
+  visibility: hidden;
 }
 
 .nav a.link {
   padding: 30px 10px;
   position: relative;
+  transition: all 0.5s ease;
   &[aria-current="page"] {
     color: #fa6400;
     &:after {
-      display: block;
+      opacity: 1;
+	  visibility: visible;
+	  bottom: 20px;
     }
   }
   &:hover {
     &:after {
-      display: block;
+      opacity: 1;
+	  visibility: visible;
+	  bottom: 20px;
     }
   }
   &:after {
@@ -121,12 +127,12 @@
     height: 8px;
     background-color: #fe5c00;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     border-radius: 50%;
     margin: 0 auto;
     left: 0;
     right: 0;
-    display: none;
+	transition: all 0.5s ease;
   }
 }
 
@@ -367,16 +373,18 @@ nav a.link:hover:after {
 }
 
 .subnav-content {
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0;
   background-color: #fff;
   width: 100%;
   z-index: 1;
-  top: 80px;
+  top: 120px;
+  transition: top 0.25s ease 0s;
 }
 .subnav:hover .subnav-content {
-  display: block;
+  visibility: visible;
+  top: 80px;
 }
 .subnav-content-inner {
   display: flex;
@@ -470,6 +478,7 @@ nav a.link:hover:after {
 .image-box-bottom span {
   font-size: 17px;
   line-height: 22px;
+  white-space: initial;
 }
 @media (min-width: 991px) {
   .navbar #togglericon:checked ~ div.nav,

@@ -30,6 +30,7 @@
   text-decoration: none;
   padding: 8px 10px;
   display: block;
+  transition: all 1s ease;
 }
 .teb-cont-inner {
   width: 40%;
@@ -41,6 +42,7 @@
 .teb-cont-body {
   width: 60%;
   padding: 10px 50px;
+  transition: all 0.5s ease;
 }
 a.move-button-link {
   display: flex;
@@ -62,12 +64,14 @@ a.move-button-link span {
 .teb-cont-body h4 {
   font-size: 22px;
   margin-bottom: 50px;
+  transition: content 0.5s ease;
 }
 
 .teb-cont-body p {
   margin-bottom: 60px;
   font-size: 18px;
   line-height: 26px;
+  transition: content 0.5s ease;
 }
 
 .move-btn {
@@ -94,6 +98,7 @@ a.move-button-link span {
   border-radius: 100%;
   left: -10px;
   top: 23px;
+  transition: content 1s ease;
 }
 .display-mobile {
   display: none;
