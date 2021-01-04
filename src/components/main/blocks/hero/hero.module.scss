@@ -1,7 +1,6 @@
 .section {
   display: inherit;
 }
-
 .hero-section,
 .slideshow-container {
   width: 100%;
@@ -21,6 +20,7 @@
   background-position: center;
   align-items: center;
   transition: .5s ease-out;
+  display: flex;
 }
 .hero-section-left {
   width: 40%;
