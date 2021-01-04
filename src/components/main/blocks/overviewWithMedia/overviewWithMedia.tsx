@@ -6,7 +6,7 @@ export default ({ block }) => {
     <section className={styles.section}>
       <div className={styles.progressSection}>
         <div
-          className={`${styles.progressSectionInner} animated animatedFadeInUp fadeInUp`}
+          className={`${styles.progressSectionInner}`}
         >
           <div className={styles.progressSectionLeft}>
             <h3>{ block.heading }</h3>

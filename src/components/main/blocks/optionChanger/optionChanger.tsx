@@ -29,7 +29,7 @@ export default ({ block }) => {
             {block.options[activeTab].label}
           </h2>
           {(block.options) && 
-            <div className={styles.tebContBody}>
+            <div className={`${styles.tebContBody} animated animated__fadeIn`}>
               <div>
                 <h4>{block.options[activeTab].heading}</h4>
                 <p>{block.options[activeTab].body}</p>

@@ -4,11 +4,12 @@ import styles from "./hero.module.scss"
 export default ({ block }) => {
   const [slideIndex, setSlideIndex] = React.useState(0)
   const switchSlides = () => {
+    console.log('Current Index', slideIndex);
     setSlideIndex(block.heroGroup.length - 1 > slideIndex ? slideIndex + 1 : 0)
   }
   React.useEffect(() => {
     if (block.heroGroup.length > 1) setInterval(switchSlides, 5000)
-  }, [])
+  }, [slideIndex])
 
   return (
     <section className={styles.section}>
@@ -17,8 +18,8 @@ export default ({ block }) => {
           {block.heroGroup.map((slide, index) => {
             return (
               <div
-                className={`${styles.mySlides} fade animate__animated ${
-                  block.heroGroup.length > 1 && "animate__fadeInLeft"
+                className={`${styles.mySlides} animated ${
+                  block.heroGroup.length > 1 && "animate__fadeIn"
                 }`}
                 key={index}
                 style={{
