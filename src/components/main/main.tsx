@@ -1,50 +1,86 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 import { Contact, ContactImageText, DeliverHope, FindTreatment, Foundation, Hero, HomeResearch, LatestProgress, OptionChanger, OsuMedicine, OverviewWithMedia, Research, Resources, Team, Testimonial, UnderstandingScience } from './blocks'
 
 import styles from './main.module.scss'
-import 'animate.css/animate.css' 
 
 export default ({ blocks, children }) => {
-  
+
+  const animationStyle = 'animate__fadeIn'
+
   return (
     <main className={styles.main} id='main'>
       {blocks && blocks.length ? (
         <div className={styles.blocks}>
          {blocks && blocks.map((block, i) => {
             return block.template === 'main-contact' ? (
-              <Contact key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <Contact key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-contact-image-text' ? (
-              <ContactImageText key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <ContactImageText key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-deliver-hope' ? (
-              <DeliverHope key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <DeliverHope key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-find-treatment' ? (
-              <FindTreatment key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <FindTreatment key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-foundation' ? (
-              <Foundation key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <Foundation key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-hero' ? (
-              <Hero key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <Hero key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-home-research' ? (
-              <HomeResearch key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <HomeResearch key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-latest-progress' ? (
-              <LatestProgress key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <LatestProgress key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-option-changer' ? (
-              <OptionChanger key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <OptionChanger key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-osu-medicine' ? (
-              <OsuMedicine key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <OsuMedicine key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-overview-with-media' ? (
-              <OverviewWithMedia key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <OverviewWithMedia key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-research' ? (
-              <Research key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <Research key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-resource' ? (
-              <Resources key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <Resources key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-team' ? (
-              <Team key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <Team key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-testimonial' ? (
-              <Testimonial key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <Testimonial key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-team' ? (
-              <Team key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <Team key={i} block={block} />
+              </ScrollAnimation>
             ) : block.template === 'main-understanding-science' ? (
-              <UnderstandingScience key={i} block={block} />
+              <ScrollAnimation key={i} animateIn={animationStyle} animateOnce scrollableParentSelector='#main' offset={150}>
+                <UnderstandingScience key={i} block={block} />
+              </ScrollAnimation>
             ) : <p key={i} className={styles.title}>{block.template} does not exist</p>
           })}
         </div>

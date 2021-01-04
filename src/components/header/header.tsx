@@ -130,6 +130,17 @@ export default () => {
           >
             <p>Resources</p>
           </Link>
+          <Link
+            activeClassName={styles.active}
+            className={styles.skewLink}
+            to="/find-treatment"
+          >
+            <p>Find Treatment</p>
+          </Link>
+          <a className={styles.donate} href="#">
+            <img src="/heart.svg" />
+            <b>Donate</b>
+          </a>
           <div className={styles.mobileMenu}>
             <a href="#">
               <img src="/heart.svg" />
@@ -142,17 +153,6 @@ export default () => {
           </div>
         </div>
         <div className={styles.rightMenu}>
-          <Link
-            activeClassName={styles.active}
-            className={styles.skewLink}
-            to="/find-treatment"
-          >
-            <p>Find Treatment</p>
-          </Link>
-          <a href="#">
-            <img src="/heart.svg" />
-            <b>Donate</b>
-          </a>
           <a href="#">
             <img src="/phone-outgoing.svg" />
             <span>

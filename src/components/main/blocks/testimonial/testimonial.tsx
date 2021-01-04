@@ -7,7 +7,6 @@ export default ({ block }) => {
       <div className={styles.testimonySection}>
         <div className={styles.testimonySectionInner}>
           <div className={styles.testimonyImages}>
-            <img src="/testimony-section-bg.png" />
             <div className={styles.testimonyImagesPng}>
               <img src="/3DC42E68-80CB-4FB6-8DB1-65605EFE8CA1.png" />
             </div>

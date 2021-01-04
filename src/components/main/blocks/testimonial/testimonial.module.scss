@@ -2,21 +2,24 @@
   width: 100%;
   margin: 0 0 0 auto;
   position: relative;
+  overflow: hidden;
 }
 .testimony-section-text {
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 50px;
-  right: 0;
+  left: 55%;
   padding: 50px;
   align-items: flex-start;
+  height: 100%;
 }
 
 .testimony-section-text h2 {
   font-size: 44px;
   color: #fff;
   margin-bottom: 50px;
+  max-width: 400px;
 }
 
 .testimony-section-text p {
@@ -33,6 +36,8 @@
   border: 0;
   font-size: 18px;
   color: #fff;
+  position: absolute;
+  bottom: 150px;
   img {
     width: 15px;
     margin-left: 21px;
@@ -40,6 +45,12 @@
   }
 }
 
+.testimonyImages {
+  background: url('/testimony-section-bg.png') no-repeat;
+  background-size: 100% auto;
+  height: 800px;
+  padding-top: 50px;
+}
 .testimony-images-png {
   position: absolute;
   bottom: 0;
@@ -51,20 +62,31 @@
 
 @media (max-width: 991px) {
 	.testimony-section-inner{
-		.testimonyImages{
-			> img{
-				height: 700px;
-			}
-		}
+    .testimonyImages {
+      background-size: auto 750px;
+      background-position-x: -200px;
+      height: 550px;
+    }
+    .testimony-images-png {
+      top: 250px;
+      bottom: auto;
+    }
 		.testimony-section-text{
-			padding: 0px 20px 20px 90px;
+      padding: 0px 20px 20px 20px;
+      left: 20%;
 			h2{
-				font-size: 28px;
-				margin-bottom: 20px;
+				font-size: 36px;
+        margin-bottom: 20px;
+        max-width: 300px;
+        line-height: 40px;
 			}
 			p{
-				margin-bottom: 40px;
-			}
+        margin-bottom: 40px;
+        display: none;
+      }
+      .btn {
+        bottom: 100px;
+      }
 		}
 	}
 }

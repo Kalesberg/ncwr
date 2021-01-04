@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 
 import { Layout } from '../../components'
 
+import 'animate.css/animate.min.css'
+
 export default props => {
   const { data: { pagesJson: page, businessJson: businessPage, residentialJson: residentialPage } } = props
 
@@ -26,7 +28,6 @@ query ($title: String!) {
         label
         heading
         button {
-          page
           label
           icon
         }

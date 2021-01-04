@@ -16,8 +16,8 @@
 }
 .progress-section-left p {
   color: #afacac;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: bold;
   line-height: 38px;
 }
 .progress-section-left h3 {
@@ -79,7 +79,7 @@ button.btn {
     line-height: 22px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
 	.progress-section-inner {
 		padding-bottom: 0;
 		& > div {

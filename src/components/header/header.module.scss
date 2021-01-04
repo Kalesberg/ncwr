@@ -110,15 +110,15 @@
     color: #fa6400;
     &:after {
       opacity: 1;
-	  visibility: visible;
-	  bottom: 20px;
+      visibility: visible;
+      bottom: 20px;
     }
   }
   &:hover {
     &:after {
       opacity: 1;
-	  visibility: visible;
-	  bottom: 20px;
+      visibility: visible;
+      bottom: 20px;
     }
   }
   &:after {
@@ -183,6 +183,29 @@ nav a.link:hover:after {
 }
 
 /* helpers */
+.nav a.skewLink {
+  background: #fe5c00;
+  color: #fff;
+  position: relative;
+  margin-right: 20px;
+  padding: 4px 10px;
+}
+
+.nav a.skewLink:after {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  content: "";
+  background: #fe5c00;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: skewX(-16deg);
+}
+.donate img {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
 .navbar-centered {
   justify-content: center;
 }
@@ -202,7 +225,10 @@ nav a.link:hover:after {
   &:link {
   }
 }
-
+.right-menu img {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
 .right-menu {
   font-family: "Noto Sans";
   display: flex;
@@ -211,10 +237,6 @@ nav a.link:hover:after {
   white-space: nowrap;
 }
 
-.right-menu img {
-  margin-right: 10px;
-  margin-bottom: 0;
-}
 .right-menu a.search-link {
   background: #000;
   text-align: center;
@@ -233,25 +255,6 @@ nav a.link:hover:after {
   left: -7px;
   content: "";
   background: #000000;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transform: skewX(-16deg);
-}
-.right-menu a.skewLink {
-  background: #fe5c00;
-  color: #fff;
-  position: relative;
-  margin-right: 20px;
-  padding: 10px;
-}
-
-.right-menu a.skewLink:after {
-  position: absolute;
-  top: 0;
-  right: -10px;
-  content: "";
-  background: #fe5c00;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -299,7 +302,6 @@ nav a.link:hover:after {
     z-index: 1;
     overflow: hidden;
   }
-
   .at-center {
     position: absolute;
   }
@@ -374,17 +376,19 @@ nav a.link:hover:after {
 
 .subnav-content {
   visibility: hidden;
+  opacity: 0;
   position: absolute;
   left: 0;
   background-color: #fff;
   width: 100%;
   z-index: 1;
   top: 120px;
-  transition: top 0.25s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .subnav:hover .subnav-content {
   visibility: visible;
-  top: 80px;
+  opacity: 1;
+  top: 100px;
 }
 .subnav-content-inner {
   display: flex;
@@ -616,7 +620,8 @@ nav a.link:hover:after {
     box-shadow: none;
     padding: 30px 0 0px;
     a.link {
-      padding: 20px 40px;
+      padding: 10px 0px 10px 40px;
+      font-weight: bold;
       p {
         padding: 0;
         font-weight: bold;
@@ -627,6 +632,14 @@ nav a.link:hover:after {
           display: none;
         }
       }
+      &:hover {
+        &:after {
+          bottom: 15px;
+        }
+      }
+    }
+    .skewLink, .donate {
+      display: none !important;
     }
     .sub-Images {
       display: block;
@@ -651,7 +664,7 @@ nav a.link:hover:after {
   }
   .subnav a {
     font-weight: bold;
-    padding: 20px 40px;
+    padding: 10px 0px 10px 40px;
     display: block;
   }
   .right-menu {

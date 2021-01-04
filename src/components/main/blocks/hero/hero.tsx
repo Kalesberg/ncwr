@@ -7,7 +7,7 @@ export default ({ block }) => {
     setSlideIndex(block.heroGroup.length - 1 > slideIndex ? slideIndex + 1 : 0)
   }
   React.useEffect(() => {
-    if (block.heroGroup.length > 1) setInterval(switchSlides, 20000)
+    if (block.heroGroup.length > 1) setInterval(switchSlides, 5000)
   }, [])
 
   return (

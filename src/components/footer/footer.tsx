@@ -61,9 +61,9 @@ export default () => {
         <div className={styles.footerRight}>
           <div className={styles.googleMap}>
             <div className={styles.mapBtn}>
-              <button className={styles.btn}>
+              <Link className={styles.btn} to="/find-treatment">
                 Get treatment in your area <img src="/right-arrows.svg" />
-              </button>
+              </Link>
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178171.1279347553!2d-107.74579769601361!3d38.93122833857192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1608198099966!5m2!1sen!2sin"

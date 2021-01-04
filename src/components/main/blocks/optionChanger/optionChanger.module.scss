@@ -1,5 +1,6 @@
 .section {
   display: inherit;
+  margin-top: -4px;
 }
 .step-section-inner {
   max-width: 1170px;
@@ -16,6 +17,7 @@
 
 .step-section ul {
   padding: 0;
+  margin-left: -10px;
 }
 
 .step-section ul li {
@@ -97,7 +99,7 @@ a.move-button-link span {
   position: absolute;
   border-radius: 100%;
   left: -10px;
-  top: 23px;
+  top: 25px;
   transition: content 1s ease;
 }
 .display-mobile {
@@ -118,7 +120,8 @@ a.move-button-link span {
 		.teb-cont-inner {
 			width: 100%;
 			ul{
-				display: flex;
+        display: flex;
+        margin-left: 0;
 				li{
 					width: 30px;
 					position: relative;
