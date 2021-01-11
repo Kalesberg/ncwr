@@ -61,18 +61,12 @@
       width: 100%;
       display: block;
       padding: 3.3vw;
-      .footer-menu {
-        a {  
-          font-size: 5.35vw;
-        }
+      & > div {
         width: 100%;
-        padding-top: 3.3vw;
-        ul {
-          margin: 0;
-        }
+        padding-top: 7vw;
       }
       .footer-menu-text {
-        a {  
+        a {
           font-size: 3.4vw;
         }
         width: 100%;
