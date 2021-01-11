@@ -102,17 +102,25 @@
       padding: 0 3.3vw 3.3vw 3.3vw;
       left: 20%;
 			h2{
-				font-size: 6vw;
+				font-size: 4vw;
         margin-bottom: 3.3vw;
         max-width: 50vw;
-        line-height: 6.6vw;
+        line-height: 4.5vw;
 			}
 			p{
         margin-bottom: 6vw;
         display: none;
       }
-      .btn {
+      button.btn {
+        font-size: 5.17vw;
         bottom: 16.6vw;
+        padding: 2vw 0;
+        width: 72vw;
+        justify-content: center;
+        img {
+          width: 1.97vw;
+          margin-left: 2.36vw;
+        }
       }
 		}
 	}
