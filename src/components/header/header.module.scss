@@ -1,5 +1,5 @@
 :root {
-  --navbar-height: 56px;
+  --navbar-height: 3.6vw;
   --navbar-background-color: white;
   --navbar-item-text-color: #888888;
   --navbar-item-background-color: var(--navbar-background-color);
@@ -22,21 +22,21 @@
     margin: 0;
     &:after {
       content: "☰";
+      font-size: 5vw;
+      width: 4.8vw;
+      height: 7.1vw;
+      line-height: 7.1vw;
+      right: 1.65vw;
+      top: 4vw;
       position: absolute;
       visibility: visible;
       color: #fe5c00;
-      font-size: 2rem;
-      width: 1.8rem;
-      height: 1.8rem;
       text-align: center;
       margin: 0;
       padding: 0;
-      line-height: 1.8rem;
       border-radius: 0.26vw;
       border: 2px solid #ffffff00;
       z-index: 99;
-      right: 0.65vw;
-      top: 0.97vw;
     }
   }
   input:checked ~ div.nav {
@@ -314,7 +314,7 @@
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 601px) {
   .header-nav {
     height: 6.5vw;
   }
@@ -389,15 +389,6 @@
       box-shadow: 0.32vw 0.32vw 0.32vw 0 #99999988;
     }
   }
-}
-
-@media (min-width: 1200px) {
-  .nav {
-    justify-content: flex-end;
-  }
-}
-
-@media (min-width: 991px) {
   .navbar {
     flex-direction: row;
     opacity: 1;
@@ -469,23 +460,19 @@
 .sub-Images {
   display: none;
 }
-.mobile-Menu {
+.mobile-menu {
   display: none;
 }
-@media (max-width: 1400px) {
-  .nav a.link {
-    padding: 1.95vw 0.32vw;
-    p {
-      padding: 0.52vw 0.26vw;
-    }
+@media (max-width: 600px) {
+  
+  .header-nav {
+    min-height: 17vw;
   }
-}
-@media (max-width: 991px) {
   .nav {
     box-shadow: none;
-    padding: 1.95vw 0 0;
+    padding: 5vw 0 0;
     a.link {
-      padding: 0.65vw 0 0.65vw 2.6vw;
+      padding: 1.6vw 0 1.6vw 6.6vw;
       font-weight: bold;
       p {
         padding: 0;
@@ -499,7 +486,7 @@
       }
       &:hover {
         &:after {
-          bottom: 0.97vw;
+          bottom: 2.5vw;
         }
       }
     }
@@ -508,44 +495,46 @@
     }
     .sub-Images {
       display: block;
-      padding: 3.9vw 0 0.97vw 31px;
+      padding: 10vw 0 2.5vw 5vw;
     }
-    .mobile-Menu {
+    .mobile-menu {
       display: block;
-      padding: 0 2.6vw;
-      margin-top: 1.95vw;
+      padding: 0 6.6vw;
+      margin-top: 5vw;
       a {
         display: flex;
         align-items: center;
-        padding: 0.65vw 0;
+        padding: 1.6vw 0;
         color: #262626;
-        font-size: 1.17vw;
+        font-size: 3vw;
         font-weight: 400;
         img {
-          margin: 0 0.65vw 0 0;
+          margin: 0 1.6vw 0 0;
         }
       }
     }
   }
   .right-menu {
     position: absolute;
-    right: 42px;
-    top: 0;
+    right: 10vw;
+    top: 4.4vw;
     span,
     b {
       display: none;
     }
     a {
-      padding: 23px 0.32vw;
+      padding: 0;
+      height: 7.1vw;
     }
     img {
       margin: 0 0;
+      height: 60%;
     }
   }
   .subnav {
     a {
       font-weight: bold;
-      padding: 0.65vw 0 0.65vw 2.6vw;
+      padding: 1.65vw 0 1.65vw 6.6vw;
       display: block;
     }
     .subnav-content {
@@ -555,14 +544,14 @@
           width: 100%;
         }
         .subnav-content-left {
-          padding: 1.3vw;
+          padding: 3.3vw;
         }
         .subnav-content-right {
           .subnav-content-image-box {
-            min-height: 180px;
+            min-height: 30vw;
             .image-box-bottom {
               width: 100%;
-              padding: 1.3vw 1.3vw;
+              padding: 3.3vw 3.3vw;
             }
           }
         }

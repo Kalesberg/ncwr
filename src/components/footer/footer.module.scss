@@ -55,20 +55,26 @@
     color: #fe5c00;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   .footer-inner {
     .footer-left {
       width: 100%;
 
-      padding: 1.3vw;
+      padding: 3.3vw;
       .footer-menu {
+        a {  
+          font-size: 5.35vw;
+        }
         width: 100%;
-        padding-top: 1.3vw;
+        padding-top: 3.3vw;
         ul {
           margin: 0;
         }
       }
       .footer-menu-text {
+        a {  
+          font-size: 3.4vw;
+        }
         width: 100%;
         ul {
           margin: 0;
@@ -79,14 +85,14 @@
       }
       .footer-logo {
         width: 100%;
-        padding: 1.3vw 0;
+        padding: 3.3vw 0;
       }
     }
     .footer-right {
       width: 100%;
       iframe {
         margin: 0;
-        min-height: 32.5vw;
+        min-height: 83.5vw;
       }
     }
   }

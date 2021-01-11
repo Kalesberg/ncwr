@@ -50,7 +50,7 @@
       z-index: 2;
       opacity: 1;
       color: #fff;
-      font-size: 44px;
+      font-size: 2.86vw;
       margin: 0 0 0.97vw;
     }
     p {
@@ -60,7 +60,7 @@
       color: #fff;
       margin: 0;
       font-size: 1.3vw;
-      line-height: 28px;
+      line-height: 1.82vw;
     }
   }
   .hero-section-bottom {
@@ -135,7 +135,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 600px) {
 	.hero-section{
 		.mySlides{
 			align-items: flex-end;
@@ -143,17 +143,17 @@
       justify-content: flex-end;
 			.hero-section-left{
 				width: 100%;
-				padding: 3.25vw 1.3vw;
+				padding: 8.3vw 3.3vw;
 				margin: 0 0;
 				&:after{
 					display: none;
 				}
 				h2{
-					font-size: 1.95vw;
+					font-size: 5vw;
 				}
 				p{
-					font-size: 1.04vw;
-					line-height: 1.3vw;
+					font-size: 2.6vw;
+					line-height: 3.3vw;
 				}
 			}
 			.bottom-icon{
@@ -164,7 +164,7 @@
 			width: 100%;
 			position: relative;
 			.move-box-1{
-				padding: 1.3vw 1.95vw;
+				padding: 3.3vw 5vw;
 				width: 50%;
 			}
 		}

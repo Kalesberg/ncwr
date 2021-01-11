@@ -50,13 +50,13 @@
     color: #fff;
     img {
       width: 0.97vw;
-      margin-left: 21px;
+      margin-left: 1.36vw;
     }
   }
   .step-section-bottom-imags {
     img {
-      width: 400px;
-      height: 300px;
+      width: 26vw;
+      height: 19.53vw;
 	  margin-left: -4.5vw;
 	  padding: 0;
     }
@@ -69,35 +69,46 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 600px) {
 	.section {
 		.step-section-bottom {
 			background-color: #fff;
-			padding: 0 0 0 1.3vw;
+			padding: 0 0 0 3.3vw;
 			.step-section-bottom-left{
 				width: 100%;
         position: relative;
-        padding-left: 6.5vw;
+        padding-left: 16.5vw;
 				img{
 					padding: 0;
 				}
 			}
 			.step-section-bottom-right{
 				width: 100%;
-				padding: 9.7vw 1.3vw 0 0;
+				padding: 25vw 3.3vw 0 0;
+        h4 {
+        font-size: 5.3vw;
+          line-height: 6.3vw;
+        }
+        span {
+          font-size: 4.3vw;
+        line-height: 6.3vw;
+        }
 			}
 			.step-section-bottom-imags{
-				left: -1.3vw;
+				left: -3.3vw;
 				img{
 					margin: 0;
-					width: 300px;
+					width: 50vw;
 				}
 			}
 		}
 		.step-section-bottom-inner{
 			flex-direction: column-reverse;
-			    margin-top: -1.95vw;
-		}
+			    margin-top: -5vw;
+    }
+    button.btn {
+      font-size: 4.3vw;
+    }
 	}
 }
 

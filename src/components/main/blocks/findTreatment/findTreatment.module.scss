@@ -2,7 +2,7 @@
   display: inherit;
 
   .find-treatment-left {
-    width: 400px;
+    width: 26vw;
     padding: 1.3vw;
   }
   .find-treatment-inner {
@@ -11,7 +11,7 @@
     padding: 1.3vw 0 0;
   }
   .find-treatment-right {
-    width: calc(100% - 400px);
+    width: calc(100% - 26vw);
     display: flex;
   }
   .search-box input {
@@ -122,7 +122,7 @@
     margin: 0;
   }
   .find-treatment-map-left {
-    width: 300px;
+    width: 19.53vw;
     background-color: #e5e5e5;
   }
 
@@ -135,7 +135,7 @@
     height: 100%;
   }
   .find-treatment-map {
-    width: calc(100% - 300px);
+    width: calc(100% - 19.53vw);
   }
   .map-left-text {
     padding: 1.3vw;
@@ -170,7 +170,7 @@
     width: 100%;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 600px) {
 	.section {
 		.find-treatment-inner {
 			.find-treatment-left{
@@ -187,7 +187,7 @@
 				.find-treatment-map{
 					width: 100%;
 					 iframe{
-						min-height: 350px;
+						min-height: 59vw;
 					 }
 				}
 			}

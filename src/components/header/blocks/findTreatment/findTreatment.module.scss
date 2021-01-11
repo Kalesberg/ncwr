@@ -32,22 +32,24 @@ a {
     }
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   a {
     &.skewLink {
       display: none;
+      &:after {
+        right: unset;
+      }
       &.mobile {
-        display: inline;
         position: absolute;
-        top: 0.78vw;
-        left: 4.5vw;
-        height: 2.6vw;
-        line-height: 35px;
-        padding: 3px 0.78vw;
+        top: 4vw;
+        left: 14.5vw;
+        line-height: 7.1vw;
+        padding: 0.5vw 5vw;
         margin: 0;
-        font-size: 0.9vw;
+        font-size: 3.1vw;
         font-weight: bold;
         z-index: 99;
+        display: inline;
       }
     }
   }

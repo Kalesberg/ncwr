@@ -19,7 +19,7 @@
       color: #afacac;
       font-size: 1.95vw;
       font-weight: 500;
-      line-height: 38px;
+      line-height: 2.47vw;
     }
     h3 {
       margin: 0 0 1.3vw;
@@ -51,10 +51,10 @@
 .play-btn {
   background-color: #ffffff66;
   border-radius: 0.78vw;
-  width: 56px;
-  height: 56px;
+  width: 3.6vw;
+  height: 3.6vw;
   position: absolute;
-  top: 31px;
+  top: 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,14 +76,41 @@ button.btn {
   color: #fff;
   img {
     width: 0.97vw;
-    margin-left: 21px;
+    margin-left: 1.36vw;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   .progress-section {
     .progress-section-inner > div {
       width: 100%;
-      padding: 1.3vw;
+      padding: 3.3vw;
+    }
+    .progress-section-left {
+      p {
+        color: #afacac;
+        font-size: 1.95vw;
+        font-weight: 500;
+        line-height: 2.47vw;
+      }
+      h3 {
+        margin: 0 0 1.3vw;
+        color: #fe5c00;
+        font-size: 1.43vw;
+      }
+    }
+    .progress-section-right {
+      h4 {
+        font-size: 6vw;
+        line-height: 6.3vw;
+      }
+      p {
+        font-size: 4.3vw;
+        line-height: 6vw;
+      }
+      span {
+        font-size: 4.3vw;
+        line-height: 6vw;
+      }
     }
   }
 }

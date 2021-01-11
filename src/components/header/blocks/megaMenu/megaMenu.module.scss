@@ -100,7 +100,7 @@
     }
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   .subnav-content {
     .subnav-content-inner {
       flex-wrap: wrap;
@@ -108,14 +108,14 @@
         width: 100%;
       }
       .subnav-content-left {
-        padding: 1.3vw;
+        padding: 3.3vw;
       }
       .subnav-content-right {
         .subnav-content-image-box {
-          min-height: 180px;
+          min-height: 30vw;
           .image-box-bottom {
             width: 100%;
-            padding: 1.3vw 1.3vw;
+            padding: 3.3vw 3.3vw;
           }
         }
       }

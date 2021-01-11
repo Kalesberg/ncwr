@@ -182,22 +182,15 @@ p {
     top: 6.5vw;
   }
 }
-@media (max-width: 1400px) {
-  a.link {
-    padding: 1.95vw 0.32vw;
-    p {
-      padding: 0.52vw 0.26vw;
-    }
-  }
-}
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   .sub-Images {
     display: block;
-    padding: 3.9vw 0 0.97vw 2.6vw;
+    padding: 10vw 0 2.5vw 6.6vw;
   }
   a.link {
-    padding: 0.65vw 0 0.65vw 2.6vw;
+    padding: 1.6vw 0 1.6vw 6.6vw;
     font-weight: bold;
+    font-size: 3vw;
     p {
       padding: 0;
       font-weight: bold;
@@ -210,14 +203,14 @@ p {
     }
     &:hover {
       &:after {
-        bottom: 0.97vw;
+        bottom: 2.5vw;
       }
     }
   }
   .subnav {
     a {
       font-weight: bold;
-      padding: 0.32vw 0 0.32vw 2.6vw;
+      padding: 0.8vw 0 0.8vw 6.6vw;
       display: block;
     }
     .subnav-content {
@@ -227,18 +220,35 @@ p {
         width: 100%;
       }
       .subnav-content-left {
-        padding: 1.3vw;
+        padding: 3.3vw;
+      .subnav-content-box {
+        a {
+            font-size: 2.17vw;
+          } 
+        h3 {
+          font-size: 3vw;
+        }
+        }
       }
       .subnav-content-right {
         .subnav-content-image-box {
-          min-height: 180px;
+          min-height: 30vw;
           .image-box-bottom {
             width: 100%;
-            padding: 1.3vw 1.3vw;
+            padding: 3.3vw 3.3vw;
+            p {
+              font-size: 2.1vw;
+            }
+            span {
+              font-size: 2.1vw;
+            }
           }
         }
       }
     }
+  }
+  &:hover .subnav-content {  
+    top: 12.5vw;
   }
   }
 }

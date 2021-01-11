@@ -9,12 +9,15 @@
     font-weight: bold;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   .footer-menu {
     width: 100%;
-    padding-top: 1.3vw;
+    padding-top: 3.3vw;
     ul {
       margin: 0;
+    }
+    a {  
+      font-size: 2.5vw;
     }
   }
 }

@@ -7,16 +7,20 @@
     margin-bottom: 0;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   .donate {
     display: none;
     &.mobile {
-      display: inline;
       position: absolute;
-      top: 23px;
-      left: 217px;
+      top: 5.8vw;
+      left: 54vw;
       padding: 0;
       z-index: 99;
+      height: 4.3vw;
+      display: inline;
+      img {
+        height: 100%;
+      }
       b {
         display: none !important;
       }

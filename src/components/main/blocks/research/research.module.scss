@@ -38,7 +38,7 @@
               position: absolute;
               border-radius: 100%;
               left: -0.65vw;
-              top: 23px;
+              top: 1.49vw;
             }
           }
         }
@@ -61,7 +61,7 @@
     h2 {
       font-size: 1.43vw;
       color: #262626;
-      line-height: 28px;
+      line-height: 1.82vw;
       margin-top: 0;
     }
   }
@@ -98,11 +98,11 @@
     color: #fff;
     img {
       width: 0.97vw;
-      margin-left: 21px;
+      margin-left: 1.36vw;
     }
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 601px) {
 	.section {
 		.blog-section-inner {
 			padding: 3.9vw 1.3vw;

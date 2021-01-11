@@ -137,39 +137,39 @@
 .display-mobile {
   display: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 600px) {
 	.section {
     .display-mobile {
       display: block;
-      margin-top: 0.97vw;
+      margin-top: 2.5vw;
       margin-bottom: 0;
-      padding-left: 1.3vw;
+      padding-left: 3.3vw;
     }
 		.team-member-section{
-		  padding: 1.3vw 0 3.9vw;
+		  padding: 3.3vw 0 10vw;
 			.team-member-section-right {
 				width: calc(100%);
 				.team-member-teb{
-          padding: 3.9vw 1.3vw 0;
+          padding: 10vw 3.3vw 0;
           ul{
             display: flex;
             margin: 0;
             li{
-              width: 1.95vw;
+              width: 5vw;
               position: relative;
-              height: 1.3vw;
+              height: 3.3vw;
               margin: 0;
               a{
                 text-indent: -9999px;  
                 padding: 0;
                 &:after{
                   content: '';
-                  width: 1.3vw;
-                  height: 1.3vw;
-                  border: 0.39vw solid #fe5c00;
+                  width: 3.3vw;
+                  height: 3.3vw;
+                  border: 1vw solid #fe5c00;
                   position: absolute;
                   left: 0;
-                  margin-right: 1.62vw;
+                  margin-right: 4vw;
                 }
                 &.active{
                   &:after{
@@ -188,7 +188,7 @@
 				}
 			}
 			.team-member-teb-body{
-				padding: 1.3vw 1.3vw 3.9vw;
+				padding: 3.3vw 3.3vw 10vw;
 			}
 		}
 		.wrapper-slider {

@@ -568,9 +568,25 @@ pre tt:after {
   -webkit-animation-fill-mode: both;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   ul {
     margin: 0;
+  }
+  h1 {
+    font-size: 5.5vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  p {
+    font-size: 4vw;
+  }
+  span {
+    font-size: 4vw;
   }
 }
 @media only screen and (max-width: 480px) {
