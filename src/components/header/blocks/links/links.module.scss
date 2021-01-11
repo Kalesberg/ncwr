@@ -206,6 +206,10 @@ p {
         bottom: 2.5vw;
       }
     }
+    &:after {
+      width: 0.8vw;
+      height: 0.8vw;
+    }
   }
   .subnav {
     a {
