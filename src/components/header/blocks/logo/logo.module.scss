@@ -6,16 +6,16 @@
   justify-content: center;
   background-color: var(--navbar-background-color);
   visibility: visible;
-  top: 12px;
-  left: 10px;
-  width: 50px;
+  top: 0.78vw;
+  left: 0.65vw;
+  width: 3.25vw;
   z-index: 99;
   img {
     max-width: 100%;
     margin-bottom: 0;
   }
   .desktopLogo {
-    margin-left: 10px;
+    margin-left: 0.65vw;
   }
 }
 @media (min-width: 991px) {
@@ -31,7 +31,7 @@
     width: auto;
     transform: translate(0, 0);
     white-space: nowrap;
-    height: 40px;
+    height: 2.6vw;
     top: 0;
     width: 350px;
     justify-content: flex-start;
@@ -46,7 +46,7 @@
   }
   .brand {
     a {
-      padding: 0px 0 0 10px;
+      padding: 0 0 0 0.65vw;
     }
     img {
       max-width: 45px;

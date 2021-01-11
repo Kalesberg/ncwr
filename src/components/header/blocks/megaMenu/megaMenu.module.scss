@@ -7,7 +7,7 @@
   background-color: #fff;
   width: 100%;
   z-index: 1;
-  top: 120px;
+  top: 7.8vw;
   transition: all 0.3s ease 0s;
   .subnav-content-inner {
     display: flex;
@@ -17,7 +17,7 @@
     }
   }
   .subnav-content-left {
-    padding: 60px;
+    padding: 3.9vw;
     display: flex;
     .subnav-content-box {
       width: 50%;
@@ -27,9 +27,9 @@
         li {
           list-style: none;
           a {
-            font-size: 18px;
+            font-size: 1.17vw;
             color: #262626;
-            padding: 10px 0;
+            padding: 0.65vw 0;
             display: block;
             &.subLink:hover {
               color: #fe5c00;
@@ -38,7 +38,7 @@
         }
       }
       h3 {
-        font-size: 30px;
+        font-size: 1.95vw;
         margin-top: 0;
       }
     }
@@ -84,17 +84,17 @@
     .image-box-bottom {
       position: absolute;
       bottom: 0;
-      padding: 20px 50px;
+      padding: 1.3vw 3.25vw;
       width: 80%;
       color: #fff;
       z-index: 2;
       p {
-        padding: 0 0 20px;
-        font-size: 17px;
+        padding: 0 0 1.3vw;
+        font-size: 1.1vw;
       }
       span {
-        font-size: 17px;
-        line-height: 22px;
+        font-size: 1.1vw;
+        line-height: 1.43vw;
         white-space: initial;
       }
     }
@@ -108,14 +108,14 @@
         width: 100%;
       }
       .subnav-content-left {
-        padding: 20px;
+        padding: 1.3vw;
       }
       .subnav-content-right {
         .subnav-content-image-box {
           min-height: 180px;
           .image-box-bottom {
             width: 100%;
-            padding: 20px 20px;
+            padding: 1.3vw 1.3vw;
           }
         }
       }

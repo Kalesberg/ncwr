@@ -16,60 +16,60 @@
   }
   .section-left-text {
     display: inline-block;
-    padding: 30px 40px;
+    padding: 1.95vw 2.6vw;
     p {
       margin: 0;
       color: #fff;
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 1.17vw;
+      line-height: 1.56vw;
     }
   }
   .medicine-section-right {
     background-color: #262626;
-    padding: 80px;
+    padding: 5.2vw;
     h3 {
       color: #fe5c00;
-      font-size: 22px;
-      margin-bottom: 50px;
+      font-size: 1.43vw;
+      margin-bottom: 3.25vw;
     }
     h5 {
       color: #fff;
-      font-size: 22px;
-      margin-bottom: 50px;
+      font-size: 1.43vw;
+      margin-bottom: 3.25vw;
       margin-top: 0;
     }
     p {
       color: #fff;
-      font-size: 18px;
+      font-size: 1.17vw;
       margin: 0;
-      line-height: 25px;
+      line-height: 1.62vw;
     }
     .move-button-link {
       color: #fff;
-      margin-top: 50px;
+      margin-top: 3.25vw;
       display: flex;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 1.17vw;
       font-weight: bold;
       align-items: center;
     }
     .move-btn {
-      width: 40px;
-      height: 40px;
+      width: 2.6vw;
+      height: 2.6vw;
       background: #fe5c00;
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 50px;
+      margin-left: 3.25vw;
       img {
-        width: 14px;
+        width: 0.9vw;
       }
     }
   }
   .medicine-section-right.color-grey {
     background-color: #e5e5e5;
-    padding: 150px 80px;
+    padding: 9.7vw 5.2vw;
     h5 {
       color: #262626;
     }
@@ -80,22 +80,22 @@
       color: #262626;
       display: flex;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 1.17vw;
       font-weight: bold;
       align-items: center;
     }
 
     .move-btn {
-      width: 40px;
-      height: 40px;
+      width: 2.6vw;
+      height: 2.6vw;
       background: #fe5c00;
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 50px;
+      margin-left: 3.25vw;
       img {
-        width: 14px;
+        width: 0.9vw;
       }
     }
   }
@@ -108,7 +108,7 @@
 			}
 			.medicine-section-right{
 				width: 100%;
-				padding: 60px 20px;
+				padding: 3.9vw 1.3vw;
 			}
 		}
 	}

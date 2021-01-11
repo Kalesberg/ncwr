@@ -3,7 +3,7 @@
 
   .contact-section-inner {
     position: relative;
-    padding: 100px 0;
+    padding: 6.5vw 0;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -30,8 +30,8 @@
         }
         p {
           color: #fff;
-          font-size: 22px;
-          margin: 0 0 30px;
+          font-size: 1.43vw;
+          margin: 0 0 1.95vw;
         }
       }
     }
@@ -45,9 +45,9 @@
 		min-width: 65px;
 		cursor: pointer;
 		img{
-			max-width: 20px;
+			max-width: 1.3vw;
 			&.down-Arrow{
-				max-width: 16px;
+				max-width: 1.04vw;
 			}
 		}
 	}
@@ -55,7 +55,7 @@
   .contact-from-inner {
     button.btn {
       background: #262626;
-      margin-bottom: 30px;
+      margin-bottom: 1.95vw;
       width: 48%;
     }
     .form-control:focus {
@@ -65,21 +65,21 @@
     form {
       display: flex;
       flex-wrap: wrap;
-      padding: 30px 0;
+      padding: 1.95vw 0;
       justify-content: space-between;
       align-items: center;
       .formGroup {
         width: 48%;
-        margin-bottom: 30px;
+        margin-bottom: 1.95vw;
         label {
           width: 100%;
-          margin-bottom: 15px;
+          margin-bottom: 0.97vw;
           display: block;
           color: #fff;
         }
         input {
           width: 100%;
-          padding: 15px;
+          padding: 0.97vw;
           border: 0;
         }
         input:checked + label:after {
@@ -88,8 +88,8 @@
           position: absolute;
           top: 2px;
           left: 9px;
-          width: 6px;
-          height: 14px;
+          width: 0.39vw;
+          height: 0.9vw;
           border: solid #ed691e;
           border-width: 0 2px 2px 0;
           transform: rotate(45deg);
@@ -111,12 +111,12 @@
           -webkit-appearance: none;
           background-color: transparent;
           border: 2px solid #f5f5f5;
-          padding: 10px;
+          padding: 0.65vw;
           display: inline-block;
           position: relative;
           vertical-align: middle;
           cursor: pointer;
-          margin-right: 15px;
+          margin-right: 0.97vw;
         }
       }
       input {
@@ -140,12 +140,12 @@
     display: flex;
     background: #ed691e;
     align-items: center;
-    padding: 15px;
+    padding: 0.97vw;
     border: 0;
-    font-size: 18px;
+    font-size: 1.17vw;
     color: #fff;
     img {
-      width: 15px;
+      width: 0.97vw;
       margin-left: 21px;
     }
   }
@@ -153,13 +153,13 @@
 @media (max-width: 991px) {
 	.section {
 		.contact-section-inner{
-			padding: 60px 0;
+			padding: 3.9vw 0;
 			.contact-section-from{
-				padding: 0 20px;
+				padding: 0 1.3vw;
 			}
 			.contact-from-inner {
 				form{
-					padding: 30px 0 0;
+					padding: 1.95vw 0 0;
 					.formGroup{
 						width: 100%;
 					}

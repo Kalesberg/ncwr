@@ -1,9 +1,9 @@
 .main {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 4.5vw);
   overflow: auto;
 }
 @media (min-width: 991px) {
   .main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 6.5vw);
   }
 }

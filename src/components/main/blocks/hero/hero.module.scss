@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   background-size: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 5.2vw);
   display: flex;
   align-items: center;
   position: relative;
@@ -11,7 +11,7 @@
     width: 100%;
     height: 100%;
     background-size: 100%;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 5.2vw);
     display: flex;
     align-items: center;
     position: relative;
@@ -23,14 +23,14 @@
   width: 100%;
   height: 100%;
   background-size: cover;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 5.2vw);
   background-position: center;
   align-items: center;
   transition: .5s ease-out;
   display: flex;
   .hero-section-left {
     width: 40%;
-    padding: 50px;
+    padding: 3.25vw;
     background-color: #de4d16;
     position: relative;
     opacity: 0.85;
@@ -51,7 +51,7 @@
       opacity: 1;
       color: #fff;
       font-size: 44px;
-      margin: 0px 0 15px;
+      margin: 0 0 0.97vw;
     }
     p {
       position: relative;
@@ -59,7 +59,7 @@
       opacity: 1;
       color: #fff;
       margin: 0;
-      font-size: 20px;
+      font-size: 1.3vw;
       line-height: 28px;
     }
   }
@@ -68,10 +68,10 @@
     bottom: 0;
     display: flex;
     width: 45%;
-    right: -20px;
+    right: -1.3vw;
   }
   .hero-box-right {
-    padding: 20px 50px;
+    padding: 1.3vw 3.25vw;
     position: relative;
     cursor: pointer;
     & > * {
@@ -122,15 +122,15 @@
     background: #fe5c00;
     position: absolute;
     left: 20%;
-    bottom: 15px;
-    width: 50px;
+    bottom: 0.97vw;
+    width: 3.25vw;
     height: 51px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     img {
-      width: 14px;
+      width: 0.9vw;
     }
   }
 }
@@ -143,17 +143,17 @@
       justify-content: flex-end;
 			.hero-section-left{
 				width: 100%;
-				padding: 50px 20px;
-				margin: 0 0px;
+				padding: 3.25vw 1.3vw;
+				margin: 0 0;
 				&:after{
 					display: none;
 				}
 				h2{
-					font-size: 30px;
+					font-size: 1.95vw;
 				}
 				p{
-					font-size: 16px;
-					line-height: 20px;
+					font-size: 1.04vw;
+					line-height: 1.3vw;
 				}
 			}
 			.bottom-icon{
@@ -164,7 +164,7 @@
 			width: 100%;
 			position: relative;
 			.move-box-1{
-				padding: 20px 30px;
+				padding: 1.3vw 1.95vw;
 				width: 50%;
 			}
 		}

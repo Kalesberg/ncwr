@@ -2,9 +2,9 @@
   display: inherit;
 
   .blog-section-inner {
-    max-width: 1170px;
+    max-width: 76.17vw;
     margin: 0 auto;
-    padding: 60px 60px;
+    padding: 3.9vw 3.9vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
   .blog-section-left {
     width: 30%;
     button.btn {
-      margin-top: 60px;
+      margin-top: 3.9vw;
     }
     ul {
       padding: 0;
@@ -20,10 +20,10 @@
       li {
         list-style: none;
         a {
-          font-size: 26px;
+          font-size: 1.69vw;
           color: #a2a2a2;
           text-decoration: none;
-          padding: 10px;
+          padding: 0.65vw;
           display: block;
           position: relative;
           &.active {
@@ -32,12 +32,12 @@
             position: relative;
             &:before {
               content: "";
-              width: 7px;
-              height: 7px;
+              width: 0.45vw;
+              height: 0.45vw;
               background: #fe5c00;
               position: absolute;
               border-radius: 100%;
-              left: -10px;
+              left: -0.65vw;
               top: 23px;
             }
           }
@@ -53,13 +53,13 @@
     flex-wrap: wrap;
   }
   .blog-box {
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 1.3vw);
   }
 
   .blog-box-text {
-    padding: 15px 0;
+    padding: 0.97vw 0;
     h2 {
-      font-size: 22px;
+      font-size: 1.43vw;
       color: #262626;
       line-height: 28px;
       margin-top: 0;
@@ -70,21 +70,21 @@
     display: flex;
     justify-content: space-between;
     h3 {
-      font-size: 22px;
+      font-size: 1.43vw;
       color: #ed691e;
     }
     form.search-box {
       position: relative;
       input[type="search"] {
-        padding: 10px;
+        padding: 0.65vw;
         border: 0;
         background: #f2f2f2;
       }
       img {
         position: absolute;
-        right: 6px;
-        width: 15px;
-        top: 10px;
+        right: 0.39vw;
+        width: 0.97vw;
+        top: 0.65vw;
       }
     }
   }
@@ -92,12 +92,12 @@
     display: flex;
     background: #ed691e;
     align-items: center;
-    padding: 15px;
+    padding: 0.97vw;
     border: 0;
-    font-size: 18px;
+    font-size: 1.17vw;
     color: #fff;
     img {
-      width: 15px;
+      width: 0.97vw;
       margin-left: 21px;
     }
   }
@@ -105,13 +105,13 @@
 @media (max-width: 991px) {
 	.section {
 		.blog-section-inner {
-			padding: 60px 20px;
+			padding: 3.9vw 1.3vw;
 			.blog-section-left{
 				width: 100%;
 			}
 			.blog-section-right{
 				width: 100%;
-				padding-top: 30px;
+				padding-top: 1.95vw;
 				.blog-box {
 					width: calc(100% / 1);
 				  }

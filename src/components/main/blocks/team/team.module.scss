@@ -2,7 +2,7 @@
   display: inherit;
 
   .team-member-section {
-    padding: 150px 0;
+    padding: 9.7vw 0;
   }
   .team-member-inner {
     display: flex;
@@ -11,27 +11,27 @@
   }
   .team-member-section-left {
     background-size: cover;
-    width: 500px;
+    width: 32.5vw;
     height: 100%;
     background-repeat: no-repeat;
-    min-height: 520px;
+    min-height: 33.85vw;
     background-position: 80% 100%;
   }
   .team-member-section-right {
-    width: calc(100% - 500px);
+    width: calc(100% - 32.5vw);
   }
   .team-member-teb {
     ul {
       padding: 0;
       display: flex;
-      margin: 0 0 50px;
+      margin: 0 0 3.25vw;
       li {
         list-style: none;
         position: relative;
         a  {
           text-decoration: none;
-          padding-right: 30px;
-          font-size: 22px;
+          padding-right: 1.95vw;
+          font-size: 1.43vw;
           color: #a2a2a2;
           display: block;
         }
@@ -40,33 +40,33 @@
           color: #262626;
           &:before {
             content: "";
-            width: 7px;
-            height: 7px;
+            width: 0.45vw;
+            height: 0.45vw;
             background: #fe5c00;
             position: absolute;
             border-radius: 100%;
             left: 0;
-            bottom: -10px;
+            bottom: -0.65vw;
             right: 0;
             margin: 0 auto;
           }
         }
       }
     }
-    padding: 0 60px;
+    padding: 0 3.9vw;
   }
   .team-member-teb-body {
-    padding: 0 60px;
+    padding: 0 3.9vw;
   }
   #team-member-teb-container {
     h4 {
-      font-size: 22px;
-      padding-bottom: 30px;
-      line-height: 26px;
+      font-size: 1.43vw;
+      padding-bottom: 1.95vw;
+      line-height: 1.69vw;
     }
     p {
-      font-size: 18px;
-      line-height: 26px;
+      font-size: 1.17vw;
+      line-height: 1.69vw;
     }
   }
   .slider-container {
@@ -81,9 +81,9 @@
   }
   
   .slider-item {
-    height: 280px !important;
+    height: 18.22vw !important;
     display: flex;
-	object-fit: cover;
+	  object-fit: cover;
     &:focus{
 		outline: none;
     }
@@ -98,9 +98,9 @@
     .arrow {
       background-color: #fe5c00;
       display: inline-block;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
+      width: 3.25vw;
+      height: 3.25vw;
+      line-height: 3.25vw;
       position: absolute;
       left: -13%;
       transform: rotate(181deg);
@@ -108,7 +108,7 @@
       text-align: center;
       cursor: pointer;
       img {
-        width: 14px;
+        width: 0.9vw;
       }
     }
   }
@@ -122,12 +122,12 @@
 	display: none;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 0 20px;
+	padding: 0 1.3vw;
 	.Image-Box{
-		width: calc(100%/2 - 10px);
-		margin: 0 0 20px;
+		width: calc(100%/2 - 0.65vw);
+		margin: 0 0 1.3vw;
 		img {
-			min-height: 235px;
+			min-height: 15.29vw;
 			width: auto;
 			object-fit: cover;
 		}
@@ -141,35 +141,35 @@
 	.section {
     .display-mobile {
       display: block;
-      margin-top: 15px;
+      margin-top: 0.97vw;
       margin-bottom: 0;
-      padding-left: 20px;
+      padding-left: 1.3vw;
     }
 		.team-member-section{
-		  padding: 20px 0 60px;
+		  padding: 1.3vw 0 3.9vw;
 			.team-member-section-right {
 				width: calc(100%);
 				.team-member-teb{
-          padding: 60px 20px 0;
+          padding: 3.9vw 1.3vw 0;
           ul{
             display: flex;
             margin: 0;
             li{
-              width: 30px;
+              width: 1.95vw;
               position: relative;
-              height: 20px;
+              height: 1.3vw;
               margin: 0;
               a{
                 text-indent: -9999px;  
                 padding: 0;
                 &:after{
                   content: '';
-                  width: 20px;
-                  height: 20px;
-                  border: 6px solid #fe5c00;
+                  width: 1.3vw;
+                  height: 1.3vw;
+                  border: 0.39vw solid #fe5c00;
                   position: absolute;
                   left: 0;
-                  margin-right: 25px;
+                  margin-right: 1.62vw;
                 }
                 &.active{
                   &:after{
@@ -183,12 +183,12 @@
             }
           }
 					// ul{
-					// 	margin: 0 0 20px;
+					// 	margin: 0 0 1.3vw;
 					// }
 				}
 			}
 			.team-member-teb-body{
-				padding: 20px 20px 60px;
+				padding: 1.3vw 1.3vw 3.9vw;
 			}
 		}
 		.wrapper-slider {

@@ -1,10 +1,10 @@
 .footer-menu {
   a {
-    font-size: 22px;
+    font-size: 1.43vw;
     color: #ffffff;
     text-decoration: none;
-    line-height: 26px;
-    padding: 6px 0;
+    line-height: 1.69vw;
+    padding: 0.39vw 0;
     display: inline-block;
     font-weight: bold;
   }
@@ -12,7 +12,7 @@
 @media (max-width: 991px) {
   .footer-menu {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 1.3vw;
     ul {
       margin: 0;
     }

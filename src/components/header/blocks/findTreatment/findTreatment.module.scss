@@ -1,22 +1,22 @@
 a {
   font-family: "Noto Sans";
-  padding: 10px;
+  padding: 0.65vw;
   text-decoration: none;
   color: #000;
   &.skewLink {
     background: #fe5c00;
     color: #fff;
     position: relative;
-    margin-left: 10px;
-    margin-right: 20px;
-    padding: 4px 10px;
+    margin-left: 0.65vw;
+    margin-right: 1.3vw;
+    padding: 0.26vw 0.65vw;
     p {
       margin: 0;
     }
     &:after {
       position: absolute;
       top: 0;
-      right: -10px;
+      right: -0.65vw;
       content: "";
       background: #fe5c00;
       width: 100%;
@@ -39,13 +39,13 @@ a {
       &.mobile {
         display: inline;
         position: absolute;
-        top: 12px;
-        left: 70px;
-        height: 40px;
+        top: 0.78vw;
+        left: 4.5vw;
+        height: 2.6vw;
         line-height: 35px;
-        padding: 3px 12px;
+        padding: 3px 0.78vw;
         margin: 0;
-        font-size: 14px;
+        font-size: 0.9vw;
         font-weight: bold;
         z-index: 99;
       }

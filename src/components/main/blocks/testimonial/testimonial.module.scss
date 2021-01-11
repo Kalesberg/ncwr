@@ -7,34 +7,34 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 50px;
+    top: 3.25vw;
     left: 55%;
-    padding: 50px;
+    padding: 3.25vw;
     align-items: flex-start;
     height: 100%;
     h2 {
       font-size: 44px;
       color: #fff;
-      margin-bottom: 50px;
+      margin-bottom: 3.25vw;
       max-width: 400px;
     }
     p {
       color: #fff;
-      font-size: 18px;
-      margin-bottom: 70px;
+      font-size: 1.17vw;
+      margin-bottom: 4.5vw;
     }
     .btn {
       background: #262626;
       display: flex;
       align-items: center;
-      padding: 15px;
+      padding: 0.97vw;
       border: 0;
-      font-size: 18px;
+      font-size: 1.17vw;
       color: #fff;
       position: absolute;
-      bottom: 150px;
+      bottom: 9.7vw;
       img {
-        width: 15px;
+        width: 0.97vw;
         margin-left: 21px;
         margin-bottom: 0;
       }
@@ -47,7 +47,7 @@
   .testimonyImages {
     background-size: 100% auto;
     height: 800px;
-    padding-top: 50px;
+    padding-top: 3.25vw;
     position: relative;
     .diagonal {
       position: absolute;
@@ -102,20 +102,20 @@
       }
     }
 		.testimony-section-text{
-      padding: 0px 20px 20px 20px;
+      padding: 0 1.3vw 1.3vw 1.3vw;
       left: 20%;
 			h2{
 				font-size: 36px;
-        margin-bottom: 20px;
+        margin-bottom: 1.3vw;
         max-width: 300px;
-        line-height: 40px;
+        line-height: 2.6vw;
 			}
 			p{
-        margin-bottom: 40px;
+        margin-bottom: 2.6vw;
         display: none;
       }
       .btn {
-        bottom: 100px;
+        bottom: 6.5vw;
       }
 		}
 	}

@@ -4,7 +4,7 @@
 
   .step-section-bottom {
     margin: 0 auto;
-    padding: 0 0px 60px;
+    padding: 0 0 3.9vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -18,38 +18,38 @@
   .step-section-bottom-left {
     width: 48%;
     img {
-      height: 500px;
+      height: 32.5vw;
       width: 100%;
       object-fit: cover;
-	  padding-left: 60px;
+	  padding-left: 3.9vw;
     }
   }
   .step-section-bottom-right {
     width: 48%;
-    padding-left: 100px;
+    padding-left: 6.5vw;
     h4 {
-      font-size: 22px;
-      padding-bottom: 50px;
-      line-height: 26px;
+      font-size: 1.43vw;
+      padding-bottom: 3.25vw;
+      line-height: 1.69vw;
     }
     span {
-      font-size: 18px;
-      line-height: 26px;
+      font-size: 1.17vw;
+      line-height: 1.69vw;
     }
     .btn {
-      margin-top: 60px;
+      margin-top: 3.9vw;
     }
   }
   button.btn {
     display: flex;
     background: #fe5c00;
     align-items: center;
-    padding: 15px;
+    padding: 0.97vw;
     border: 0;
-    font-size: 18px;
+    font-size: 1.17vw;
     color: #fff;
     img {
-      width: 15px;
+      width: 0.97vw;
       margin-left: 21px;
     }
   }
@@ -57,11 +57,11 @@
     img {
       width: 400px;
       height: 300px;
-	  margin-left: -70px;
+	  margin-left: -4.5vw;
 	  padding: 0;
     }
     position: absolute;
-    bottom: -120px;
+    bottom: -7.8vw;
     z-index: 3;
   }
   .wrap-white-space {
@@ -73,21 +73,21 @@
 	.section {
 		.step-section-bottom {
 			background-color: #fff;
-			padding: 0px 0px 0px 20px;
+			padding: 0 0 0 1.3vw;
 			.step-section-bottom-left{
 				width: 100%;
         position: relative;
-        padding-left: 100px;
+        padding-left: 6.5vw;
 				img{
 					padding: 0;
 				}
 			}
 			.step-section-bottom-right{
 				width: 100%;
-				padding: 150px 20px 0 0px;
+				padding: 9.7vw 1.3vw 0 0;
 			}
 			.step-section-bottom-imags{
-				left: -20px;
+				left: -1.3vw;
 				img{
 					margin: 0;
 					width: 300px;
@@ -96,7 +96,7 @@
 		}
 		.step-section-bottom-inner{
 			flex-direction: column-reverse;
-			    margin-top: -30px;
+			    margin-top: -1.95vw;
 		}
 	}
 }
