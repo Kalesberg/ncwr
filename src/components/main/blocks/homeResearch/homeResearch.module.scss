@@ -113,10 +113,15 @@ button.btn {
       }
     }
     button.btn {
-      font-size: 5.17vw;
+      font-size: 4vw;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 3vw;
       img {
         width: 1.97vw;
         margin-left: 2.36vw;
+        margin-top: 1vw;
       }
     }
   }
