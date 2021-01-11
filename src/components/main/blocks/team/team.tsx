@@ -135,7 +135,7 @@ export default ({ block }) => {
                   className={`${styles.arrow} ${styles.left}`}
                   htmlFor="prev"
                 >
-                  <img src="right-arrows.svg" alt="left" />
+                  <img src="/right-arrows.svg" alt="left" />
                 </label>
               </div>
             </div>

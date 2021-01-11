@@ -1,11 +1,16 @@
-import React from 'react'
-import styles from './findTreatment.module.scss'
+import React from "react"
+import { Link } from "gatsby"
+import styles from "./findTreatment.module.scss"
 
-export default ({ block }) => {
+export default ({ block, isMobile }) => {
 
   return (
-    <section className={styles.section}>
-      {block.template}
-    </section>
+    <Link
+      activeClassName={styles.active}
+      className={isMobile ? `${styles.skewLink} ${styles.mobile}` : `${styles.skewLink}`}
+      to="/find-treatment"
+    >
+      <p>Find Treatment</p>
+    </Link>
   )
 }

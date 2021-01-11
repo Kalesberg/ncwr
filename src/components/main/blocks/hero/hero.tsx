@@ -1,66 +1,36 @@
 import React from "react"
 import styles from "./hero.module.scss"
 
-const requestAnimFrame = (function() {
-	return  window.requestAnimationFrame       || 
-    window.webkitRequestAnimationFrame || 
-    window.mozRequestAnimationFrame    || 
-    window.oRequestAnimationFrame      || 
-    window.msRequestAnimationFrame     || 
-    function(/* function */ callback, /* DOMElement */ element){
-      window.setTimeout(callback, 1000 / 60);
-    };
-})();
-
-const requestInterval = function(fn, delay) {
-	if( !window.requestAnimationFrame       && 
-		!window.webkitRequestAnimationFrame && 
-		!(window.mozRequestAnimationFrame && window.mozCancelRequestAnimationFrame) && // Firefox 5 ships without cancel support
-		!window.oRequestAnimationFrame      && 
-		!window.msRequestAnimationFrame)
-			return window.setInterval(fn, delay);
-
-	var start = new Date().getTime(),
-		handle = new Object();
-
-	function loop() {
-		var current = new Date().getTime(),
-			delta = current - start;
-
-		if(delta >= delay) {
-			fn.call();
-			start = new Date().getTime();
-		}
-
-		handle.value = requestAnimFrame(loop);
-	};
-
-	handle.value = requestAnimFrame(loop);
-	return handle;
-}
-
-/**
- * Behaves the same as clearInterval except uses cancelRequestAnimationFrame() where possible for better performance
- * @param {int|object} fn The callback function
- */
-const clearRequestInterval = function(handle) {
-  window.cancelAnimationFrame ? window.cancelAnimationFrame(handle.value) :
-  window.webkitCancelAnimationFrame ? window.webkitCancelAnimationFrame(handle.value) :
-  window.webkitCancelRequestAnimationFrame ? window.webkitCancelRequestAnimationFrame(handle.value) : /* Support for legacy API */
-  window.mozCancelRequestAnimationFrame ? window.mozCancelRequestAnimationFrame(handle.value) :
-  window.oCancelRequestAnimationFrame	? window.oCancelRequestAnimationFrame(handle.value) :
-  window.msCancelRequestAnimationFrame ? window.msCancelRequestAnimationFrame(handle.value) :
-  clearInterval(handle);
-};
+declare const window: any;
 
 export default ({ block }) => {
-  const [slideIndex, setSlideIndex] = React.useState(0)
-  const switchSlides = () => {
-    setSlideIndex(block.heroGroup.length - 1 > slideIndex ? slideIndex + 1 : 0)
+  if (typeof window !== 'undefined') {
+    window.requestAnimationFrame = window.requestAnimationFrame ||
+							window.mozRequestAnimationFrame ||
+							window.webkitRequestAnimationFrame ||
+              window.msRequestAnimationFrame
   }
+
+  const [slideIndex, setSlideIndex] = React.useState(0)
+
+  const animateSlides = () => {
+    setTimeout(() => {
+      requestAnimationFrame(animateSlides)
+      setSlideIndex(block.heroGroup.length - 1 > slideIndex ? slideIndex + 1 : 0)
+    }, 5000)
+  }
+
   React.useEffect(() => {
-    if (block.heroGroup.length > 1) requestInterval(switchSlides, 500000)
+    if (block.heroGroup.length > 1) requestAnimationFrame(animateSlides)
   }, [slideIndex])
+
+  const scrollDown = () => {
+    document.getElementById('main').scrollBy({
+      left: 0,
+      top: document.getElementById('main').offsetHeight,
+      behavior: 'smooth'
+    })
+  }
 
   return (
     <section className={styles.section}>
@@ -100,7 +70,7 @@ export default ({ block }) => {
                     ))}
                   </div>
                 )}
-                <div className={styles.bottomIcon}>
+                <div className={styles.bottomIcon} onClick={scrollDown}>
                   <img className={styles.icon} src="/down.svg" />
                 </div>
               </div>

@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: ".forestry/content/research-articles"
+  label: Research Articles
+  create: documents
+  match: "**/*"
+  templates:
+  - content-type-article
 - type: heading
   label: Content
 - type: directory
@@ -31,6 +38,13 @@ sections:
   templates:
   - content-type-support-video
   - content-type-support
+- type: directory
+  path: ".forestry/content/support-faq"
+  label: Support Faq
+  create: documents
+  match: "**/*"
+  templates:
+  - content-type-faq
 - type: document
   path: ".forestry/content/testimonials.json"
   label: Testimonials

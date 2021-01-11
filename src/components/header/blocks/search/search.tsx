@@ -4,8 +4,8 @@ import styles from './search.module.scss'
 export default ({ block }) => {
 
   return (
-    <section className={styles.section}>
-      {block.template}
-    </section>
+    <a href="#" className={styles.searchLink}>
+      <img src={block.icon} />
+    </a>
   )
 }

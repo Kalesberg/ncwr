@@ -1,168 +1,43 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import styles from "./header.module.scss"
 
+import { Donate, FindTreatment, Links, Logo, MobileMenuButton, Phone, Search } from "./blocks"
+import headerConfig from "../../../.forestry/content/settings/header.json"
+
 export default () => {
+  const headerLogo = headerConfig.blocks.find(block => block.template === 'header-logo')
+  const headerLinks = headerConfig.blocks.find(block => block.template === 'header-links')
+  const headerMegamenu = headerConfig.blocks.find(block => block.template === 'header-megamenu')
+  const headerFindings = headerConfig.blocks.find(block => block.template === 'header-find-treatment')
+  const headerDonate = headerConfig.blocks.find(block => block.template === 'header-donate')
+  const headerPhone = headerConfig.blocks.find(block => block.template === 'header-phone')
+  const headerSearch = headerConfig.blocks.find(block => block.template === 'header-search')
   return (
     <div className={styles.headerNav}>
       <div className={styles.navbar}>
-        <input type="checkbox" id="togglericon" className={styles.toggler} />
-        <label htmlFor="togglericon" className={styles.toggler} />
-        <div className={styles.brand}>
-          <Link to="/">
-            <img src="logo.svg" className={styles.desktopLogo} />
-            <img src="favicon.png" className={styles.mobileLogo} />
-          </Link>
-        </div>
+        <MobileMenuButton />
+        <Logo block={headerLogo} />
+        <FindTreatment block={headerFindings} isMobile={true} />
+        <Donate block={headerDonate} isMobile={true} />
         <div className={styles.nav}>
-          <div className={styles.subImages}>
-            <img src="text-logo.png" className={styles.TextLogoImage} />
-          </div>
-
-          <Link
-            activeClassName={styles.active}
-            className={styles.link}
-            to="/about"
-          >
-            About
-          </Link>
-          <Link
-            activeClassName={styles.active}
-            className={styles.link}
-            to="/awareness-involvment"
-          >
-            Awareness & Involvement
-          </Link>
-          <div className={styles.subnav}>
-            <a href="#" className={styles.navLink}>
-              Research
-            </a>
-            <div className={styles.subnavContent}>
-              <div className={styles.subnavContentInner}>
-                <div className={styles.subnavContentLeft}>
-                  <div className={styles.subnavContentBox}>
-                    <h3>Overview</h3>
-                    <ul>
-                      <li>
-                        {" "}
-                        <a className={styles.subLink} href="#">
-                          Areas of focus
-                        </a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a className={styles.subLink} href="#">
-                          Partners
-                        </a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a className={styles.subLink} href="#">
-                          Facility
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className={styles.subnavContentBox}>
-                    <h3>Research</h3>
-                    <ul>
-                      <li>
-                        {" "}
-                        <a className={styles.subLink} href="#">
-                          Ongoing studies
-                        </a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a className={styles.subLink} href="#">
-                          Completed studies
-                        </a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a className={styles.subLink} href="#">
-                          Participate in studies
-                        </a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a className={styles.subLink} href="#">
-                          Bio Samples
-                        </a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a className={styles.subLink} href="#">
-                          H.E.A.L.
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className={styles.subnavContentRight}>
-                  <div
-                    className={styles.subnavContentImageBox}
-                    style={{ backgroundImage: 'url("/menuImage1.png")' }}
-                  >
-                    <div className={styles.imageBoxBottom}>
-                      <p>01</p>
-                      <span>[Research/highlight headline 1, TBD]</span>
-                    </div>
-                  </div>
-                  <div
-                    className={`${styles.subnavContentImageBox} ${styles.colorOrange}`}
-                    style={{ backgroundImage: 'url("/menuImage2.png")' }}
-                  >
-                    <div className={styles.imageBoxBottom}>
-                      <p>02</p>
-                      <span>[Research/highlight headline 2, TBD]</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <Link
-            activeClassName={styles.active}
-            className={styles.link}
-            to="/resources"
-          >
-            <p>Resources</p>
-          </Link>
-          <Link
-            activeClassName={styles.active}
-            className={styles.skewLink}
-            to="/find-treatment"
-          >
-            <p>Find Treatment</p>
-          </Link>
-          <a className={styles.donate} href="#">
-            <img src="/heart.svg" />
-            <b>Donate</b>
-          </a>
+          <Links block={headerLinks} megamenuBlock={headerMegamenu} />
+          <FindTreatment block={headerFindings} isMobile={false} />
+          <Donate block={headerDonate} isMobile={false} />
           <div className={styles.mobileMenu}>
-            <a href="#">
-              <img src="/heart.svg" />
-              Donate
+            <a href={headerDonate.link}>
+              <img src={headerDonate.icon} />
+              {headerDonate.label}
             </a>
-            <a href="#">
-              <img src="/phone-outgoing.svg" />
-              <span>800-123-4567</span>
+            <a href={headerPhone.linkto}>
+              <img src={headerPhone.icon} />
+              <span>{headerPhone.number}</span>
             </a>
           </div>
         </div>
         <div className={styles.rightMenu}>
-          <a href="#">
-            <img src="/phone-outgoing.svg" />
-            <span>
-              Get help now <br />
-              <b>800-123-4567</b>
-            </span>
-          </a>
-          <a href="#" className={styles.searchLink}>
-            <img src="/search.svg" />
-          </a>
+          <Phone block={headerPhone} />
+          <Search block={headerSearch} />
         </div>
       </div>
     </div>

@@ -1,0 +1,15 @@
+#togglericon:checked ~ div.nav, #togglericon ~ div.nav {
+  visibility: visible;
+}
+.toggler {
+  display: none;
+}
+@media (max-width: 992px) {
+  #togglericon:checked ~ div.nav, #togglericon ~ div.nav {
+    visibility: visible;
+    left: 0;
+  }
+  .toggler {
+    display: inline;
+  }
+}

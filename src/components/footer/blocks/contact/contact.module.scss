@@ -1,0 +1,18 @@
+.footer-contact {
+  padding-left: 80px;
+  h3 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 0 40px;
+  }
+  p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 991px) {
+  .footer-contact {
+    display: none;
+  }
+}
