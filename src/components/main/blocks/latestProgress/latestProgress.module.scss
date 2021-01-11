@@ -40,7 +40,7 @@
   .slider-item-text h2 {
     font-size: 1.43vw;
     color: #262626;
-    line-height: 35px;
+    line-height: 2.27vw;
     margin-top: 0;
   }
   .slider-item-text p {
@@ -72,6 +72,16 @@
 
 @media (max-width: 600px) {
 	.section {
+    .latest-progress-title h2 {
+      font-size: 2.86vw;
+    }
+    .slider-item-text h2 {
+      font-size: 3.3vw;
+      line-height: 5.5vw;
+    }
+    .slider-item-text p {
+      font-size: 2.4vw;
+    }
 		.latest-progress-inner{
 			padding: 0 3.3vw;
 			.wrapper-slider {

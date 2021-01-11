@@ -109,7 +109,33 @@
 			.medicine-section-right{
 				width: 100%;
 				padding: 10vw 3.3vw;
+        h3 {
+          font-size: 5.3vw;
+        }
+        h5 {
+          font-size: 5.3vw;
+        }
+        p {
+          font-size: 4.3vw;
+          line-height: 6vw;
+        }
+        .move-btn {
+          width: 3.5vw;
+          height: 3.5vw;
+          img {
+            width: 1.9vw;
+          }
+        }
+        .move-button-link {
+          font-size: 4.3vw;
+        }
 			}
-		}
+    }
+    .section-left-text {
+      p {
+        font-size: 4.3vw;
+        line-height: 5.8vw;
+      }
+    }
 	}
 }
