@@ -4,29 +4,50 @@
 .progress-section {
   max-width: 1170px;
   margin: 0 auto;
+  .progress-section-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    & > div {
+      width: 45%;
+    }
+  }
+  .progress-section-left {
+    p {
+      color: #afacac;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 38px;
+    }
+    h3 {
+      margin: 0 0 20px;
+      color: #fe5c00;
+      font-size: 22px;
+    }
+  }
+  .progress-section-right {
+    h4 {
+      font-size: 22px;
+      padding-bottom: 50px;
+      line-height: 26px;
+    }
+    p {
+      color: #fe5c00;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+    .btn {
+      margin-top: 60px;
+    }
+    span {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
 }
-.progress-section-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 60px 0;
-}
-.progress-section-inner > div {
-  width: 45%;
-}
-.progress-section-left p {
-  color: #afacac;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 38px;
-}
-.progress-section-left h3 {
-  margin: 0 0 20px;
-  color: #fe5c00;
-  font-size: 22px;
-}
-
 .play-btn {
   background-color: #ffffff66;
   border-radius: 12px;
@@ -58,30 +79,11 @@ button.btn {
     margin-left: 21px;
   }
 }
-
-.progress-section-right {
-  h4 {
-    font-size: 22px;
-    padding-bottom: 50px;
-    line-height: 26px;
-  }
-  p {
-    color: #fe5c00;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-  }
-  .btn {
-    margin-top: 60px;
-  }
-  span {
-    font-size: 18px;
-    line-height: 22px;
-  }
-}
 @media (max-width: 991px) {
-		.progress-section-inner > div {
-		  width: 100%;
-		  padding: 20px;
-		}
+  .progress-section {
+    .progress-section-inner > div {
+      width: 100%;
+      padding: 20px;
+    }
+  }
 }

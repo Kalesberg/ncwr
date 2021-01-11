@@ -1,11 +1,11 @@
-import React from 'react'
-import styles from './mobileMenuButton.module.scss'
+import React from "react"
+import styles from "./mobileMenuButton.module.scss"
 
-export default ({ block }) => {
-
+export default () => {
   return (
-    <section className={styles.section}>
-      {block.template}
-    </section>
+    <>
+      <input type="checkbox" id="togglericon" className={styles.toggler} />
+      <label htmlFor="togglericon" className={styles.toggler} />
+    </>
   )
 }

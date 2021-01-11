@@ -7,8 +7,11 @@ export default ({ block }) => {
       <div className={styles.testimonySection}>
         <div className={styles.testimonySectionInner}>
           <div className={styles.testimonyImages}>
+            <div className={styles.background}></div>
+            <div className={styles.backgroundImage} style={{backgroundImage: `url(${block.backgroundImage})`}}></div>
+            <div className={styles.diagonal}></div>
             <div className={styles.testimonyImagesPng}>
-              <img src="/3DC42E68-80CB-4FB6-8DB1-65605EFE8CA1.png" />
+              <img src={block.image} />
             </div>
           </div>
           <div className={styles.testimonySectionText}>

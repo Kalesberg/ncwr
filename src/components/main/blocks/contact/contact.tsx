@@ -31,11 +31,10 @@ export default ({ block }) => {
                 <div className={styles.formGroup}>
                   <label htmlFor="ContactMethod">Contact Method:</label>
                   <div className={styles.formGroupInner}>
-                   
-					<button className={styles.blackButton}>
-						<img src="/email.png"/>
-						<img src="/down-arrow.png" className={styles.downArrow}/>
-					</button>
+                    <button className={styles.blackButton}>
+                      <img src="/email.png"/>
+                      <img src="/down-arrow.png" className={styles.downArrow}/>
+                    </button>
                     <input
                       type="text"
                       className={styles.formControl}

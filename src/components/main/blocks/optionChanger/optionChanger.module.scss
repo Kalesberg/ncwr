@@ -10,41 +10,63 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.teb-cont-inner h3 {
-  color: #fe5c00;
-  font-size: 16px;
-}
-
-.step-section ul {
-  padding: 0;
-  margin-left: -10px;
-}
-
-.step-section ul li {
-  list-style: none;
-  margin: 0;
-}
-
-.step-section ul li a {
-  font-size: 30px;
-  font-weight: bold;
-  color: #a2a2a2;
-  text-decoration: none;
-  padding: 8px 10px;
-  display: block;
-  transition: all 1s ease;
+.step-section {
+  background-color: #e5e5e5;
+  ul {
+    padding: 0;
+    margin-left: -10px;
+    li {
+      list-style: none;
+      margin: 0;
+      a {
+        font-size: 30px;
+        font-weight: bold;
+        color: #a2a2a2;
+        text-decoration: none;
+        padding: 8px 10px;
+        display: block;
+        transition: all 0.5s ease;
+        &.active {
+          color: #262626;
+          position: relative;
+          &:before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: #fe5c00;
+            position: absolute;
+            border-radius: 100%;
+            left: -10px;
+            top: 25px;
+            transition: content 1s ease;
+          }
+        }
+      }
+    }
+  }
 }
 .teb-cont-inner {
   width: 40%;
+  h3 {
+    color: #fe5c00;
+    font-size: 16px;
+  }
 }
-.step-section {
-  background-color: #e5e5e5;
-}
-
 .teb-cont-body {
   width: 60%;
   padding: 10px 50px;
   transition: all 0.5s ease;
+  h4 {
+    font-size: 22px;
+    margin-bottom: 50px;
+    transition: content 0.5s ease;
+  }
+  p {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 26px;
+    transition: content 0.5s ease;
+  }
 }
 a.move-button-link {
   display: flex;
@@ -62,20 +84,6 @@ a.move-button-link img {
 a.move-button-link span {
   font-size: 18px;
 }
-
-.teb-cont-body h4 {
-  font-size: 22px;
-  margin-bottom: 50px;
-  transition: content 0.5s ease;
-}
-
-.teb-cont-body p {
-  margin-bottom: 60px;
-  font-size: 18px;
-  line-height: 26px;
-  transition: content 0.5s ease;
-}
-
 .move-btn {
   width: 40px;
   height: 40px;
@@ -85,22 +93,6 @@ a.move-button-link span {
   align-items: center;
   justify-content: center;
   margin-left: 50px;
-}
-.step-section ul li a.active {
-  color: #262626;
-  position: relative;
-}
-
-.step-section ul li a.active:before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  background: #fe5c00;
-  position: absolute;
-  border-radius: 100%;
-  left: -10px;
-  top: 25px;
-  transition: content 1s ease;
 }
 .display-mobile {
   display: none;

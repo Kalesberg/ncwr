@@ -119,13 +119,13 @@
   "blocks": [
     {
       "template": "header-phone",
-      "number": "",
-      "icon": "",
-      "linkto": ""
+      "number": "800-123-4567",
+      "icon": "/phone-outgoing.svg",
+      "linkto": "tel:8001234567"
     },
     {
       "template": "header-search",
-      "icon": ""
+      "icon": "/search.svg"
     },
     {
       "template": "header-mobile-button",
@@ -135,36 +135,65 @@
       "template": "header-megamenu",
       "overview": {
         "links": [
-
+          {
+            "label": "Overview Label",
+            "anchorLink": "https://twitter.com"
+          }
         ]
       },
       "research": {
         "links": [
-
+          {
+            "label": "Research Link",
+            "anchorLink": "https://www.google.com",
+            "highlights": [
+              {
+                "highlight": "Highlight Text 01",
+                "image": "/menuImage2.png"
+              },
+              {
+                "highlight": "Highlight Text 02",
+                "image": "/3372C57D-9E7F-4B28-B674-0C0ADFC9C212.png"
+              }
+            ]
+          }
         ]
       }
     },
     {
       "template": "header-donate",
-      "label": "",
-      "icon": "",
-      "link": ""
+      "label": "Donate",
+      "icon": "/heart.svg",
+      "link": "https://opencollective.com"
     },
     {
       "template": "header-logo",
-      "logo": ""
+      "logo": "/logo.svg"
     },
     {
       "template": "header-find-treatment",
-      "page": [
-
-      ],
-      "label": ""
+      "page": ".forestry/content/pages/find-treatment.json",
+      "label": "Find Treatment"
     },
     {
       "template": "header-links",
       "links": [
-
+        {
+          "label": "About",
+          "page": ".forestry/content/pages/about.json"
+        },
+        {
+          "label": "Awareness & Involvement",
+          "page": ".forestry/content/pages/awareness-involvement.json"
+        },
+        {
+          "label": "Research",
+          "page": ".forestry/content/pages/research.json"
+        },
+        {
+          "label": "Resources",
+          "page": ".forestry/content/pages/resources.json"
+        }
       ]
     }
   ]

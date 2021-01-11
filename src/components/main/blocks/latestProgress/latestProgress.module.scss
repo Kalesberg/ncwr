@@ -25,9 +25,9 @@
     max-width: 342px !important;
     display: flex;
     flex-wrap: wrap;
-	&:focus{
-		outline: none;
-	}
+    &:focus{
+      outline: none;
+    }
   }
   .slider-container {
     overflow: hidden;

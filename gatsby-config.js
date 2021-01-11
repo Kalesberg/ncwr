@@ -55,7 +55,7 @@ module.exports = {
         background_color: '#F92A35',
         theme_color: '#F92A35',
         display: 'standalone',
-        icon: `${__dirname}${config.favicon}`
+        icon: `${__dirname}/static${config.favicon}`
       }
     },
     'gatsby-plugin-remove-console',

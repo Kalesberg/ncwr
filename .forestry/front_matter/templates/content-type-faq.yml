@@ -1,0 +1,17 @@
+---
+label: 'Content Type: Faq'
+hide_body: false
+fields:
+- name: question
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Question
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags

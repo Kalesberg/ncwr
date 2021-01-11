@@ -1,0 +1,25 @@
+.donate {
+  &.mobile {
+    display: none;
+  }
+  img {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .donate {
+    display: none;
+    &.mobile {
+      display: inline;
+      position: absolute;
+      top: 23px;
+      left: 217px;
+      padding: 0;
+      z-index: 99;
+      b {
+        display: none !important;
+      }
+    }
+  }
+}
