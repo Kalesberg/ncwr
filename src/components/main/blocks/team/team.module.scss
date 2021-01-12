@@ -147,6 +147,10 @@
     }
 		.team-member-section{
 		  padding: 3.3vw 0 10vw;
+			.team-member-section-left {
+        width: 52vw;
+        margin-left: 3vw;
+      }
 			.team-member-section-right {
 				width: calc(100%);
 				.team-member-teb{
