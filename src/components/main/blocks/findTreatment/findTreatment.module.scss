@@ -68,7 +68,7 @@
   .search-box input::placeholder {
     color: #262626;
     font-weight: bold;
-    font-size: 1.17vw;
+    font-size: 5vw;
   }
   .search-box {
     position: relative;
@@ -212,14 +212,14 @@
       .find-treatment-dropdown {
         margin-top: 1vw;
         .form-control {
-          padding: 3vw 7vw;
+          padding: 3vw 8vw 3vw 6vw;
           font-size: 5vw;
         }
         &:after {
-          width: 2.5vw;
-          height: 2.5vw;
+          width: 2vw;
+          height: 2vw;
           top: 4vw;
-          right: 2vw;
+          right: 3vw;
         }
       }
 		}

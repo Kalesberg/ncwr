@@ -73,17 +73,19 @@
 @media (max-width: 600px) {
 	.section {
     .latest-progress-title h2 {
-      font-size: 2.86vw;
+      font-size: 6vw;
+      display: none;
     }
     .slider-item {
       max-width: unset !important;
     }
     .slider-item-text h2 {
-      font-size: 3.3vw;
-      line-height: 3.5vw;
+      font-size: 6vw;
+      line-height: 7vw;
+      margin-bottom: 3vw;
     }
     .slider-item-text p {
-      font-size: 2.4vw;
+      font-size: 4vw;
     }
 		.latest-progress-inner{
 			padding: 0 3.3vw;
@@ -92,7 +94,8 @@
 			}
 		}
 		.mobile-Slider{
-			display: block;
+      display: block;
+      padding: 0 6vw;
 		}
 	}
 }

@@ -11,13 +11,6 @@ a {
     margin-left: 0.97vw;
     padding: 0.66vw;
 
-    @media screen and (max-width: 600px) {
-      height: 8vw;
-      padding: 0.5vw 3vw;
-      margin-left: 4vw;
-      font-size: 3.1vw;
-    }
-
     img {
       margin: 0;
     }
@@ -31,13 +24,21 @@ a {
       height: 100%;
       z-index: -1;
       transform: skewX(-16deg);
-
-      @media screen and (max-width: 600px) {
-        left: -1.45vw;
-      }
     }
   }
   p {
     margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  a.search-link {
+    height: 10vw;
+    padding: 1.5vw 3vw;
+    margin-left: 4vw;
+    font-size: 3.1vw;
+    &:before {
+      height: 99%;
+      left: -1.45vw;
+    }
   }
 }

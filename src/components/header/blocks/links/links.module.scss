@@ -185,12 +185,12 @@ p {
 @media (max-width: 600px) {
   .sub-Images {
     display: block;
-    padding: 14vw 0 2.5vw 6.6vw;
+    padding: 15vw 0 2.5vw 12vw;
   }
   a.link {
-    padding: 1.6vw 0 1.6vw 6.6vw;
+    padding: 2vw 0 2vw 12vw;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 5vw;
     p {
       padding: 0;
       font-weight: bold;
@@ -207,14 +207,17 @@ p {
       }
     }
     &:after {
-      width: 0.8vw;
-      height: 0.8vw;
+      width: 2vw;
+      height: 2vw;
+      left: unset;
+      right: 5vw;
+      top: 5vw;
     }
   }
   .subnav {
     a {
       font-weight: bold;
-      padding: 0.8vw 0 0.8vw 6.6vw;
+      padding: 2vw 0 2vw 12vw;
       display: block;
     }
     .subnav-content {
@@ -225,13 +228,13 @@ p {
       }
       .subnav-content-left {
         padding: 3.3vw;
-      .subnav-content-box {
-        a {
+        .subnav-content-box {
+          a {
             font-size: 2.17vw;
-          } 
-        h3 {
-          font-size: 3vw;
-        }
+          }
+          h3 {
+            font-size: 3vw;
+          }
         }
       }
       .subnav-content-right {
@@ -251,7 +254,7 @@ p {
       }
     }
   }
-  &:hover .subnav-content {  
+  &:hover .subnav-content {
     top: 12.5vw;
   }
   }

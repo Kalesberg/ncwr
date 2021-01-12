@@ -173,10 +173,10 @@
 						width: 100%;
           }
           label {
-            font-size: 3vw;
+            font-size: 4vw;
           }
           input {
-            padding: 3vw;
+            padding: 4vw 3vw;
           }
 					button.btn{
 						width: 100%;
@@ -193,7 +193,7 @@
           .checkbox-group {
             label {
               &:before {
-                padding: 1.65vw;
+                padding: 3vw;
               }
             }
           }
@@ -201,9 +201,9 @@
       }
       button.btn {
         padding: 3vw;
-        font-size: 3.5vw;
+        font-size: 4vw;
         img {
-          width: 2vw;
+          width: 3vw;
         }
       }
 		}

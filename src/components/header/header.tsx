@@ -31,7 +31,7 @@ export default () => {
             </a>
             <a href={headerPhone.linkto}>
               <img src={headerPhone.icon} />
-              <span>{headerPhone.number}</span>
+              {headerPhone.number}
             </a>
           </div>
         </div>
