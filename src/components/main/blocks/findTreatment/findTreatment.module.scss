@@ -198,6 +198,30 @@
         font-size: 4vw;
         line-height: 4.56vw;
       }
+      .search-box {
+        input {
+          padding: 2vw 0 3vw 6vw;
+          border-bottom-width: 5px;
+          font-size: 5vw;
+        }
+        img {
+          width: 5vw;
+          top: 2vw;
+        }
+      }
+      .find-treatment-dropdown {
+        margin-top: 1vw;
+        .form-control {
+          padding: 3vw 7vw;
+          font-size: 5vw;
+        }
+        &:after {
+          width: 2.5vw;
+          height: 2.5vw;
+          top: 4vw;
+          right: 2vw;
+        }
+      }
 		}
 	}
 }

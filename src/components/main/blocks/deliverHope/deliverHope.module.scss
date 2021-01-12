@@ -61,14 +61,17 @@
 			}
 		}
 		.move-btn {
-			width: 3.2vw;
-			height: 3.2vw;
+			width: 6vw;
+			height: 6vw;
 			img {
 				width: 1.9vw;
 			}
 		}
 		.move-button-link {
 			font-size: 4.3vw;
+			span {
+				font-size: 4.3vw;
+			}
 		}
 	}
 }

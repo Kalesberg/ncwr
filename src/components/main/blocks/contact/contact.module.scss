@@ -155,13 +155,14 @@
 		.contact-section-inner{
 			padding: 10vw 0;
 			.contact-section-from{
-				padding: 0 3.3vw;
+        padding: 0 3.3vw;
+        max-width: 80%;
         .contact-from-title {
           h2 {
-            font-size: 5.86vw;
+            font-size: 6vw;
           }
           p {
-            font-size: 1.43vw;
+            font-size: 4vw;
           }
         }
 			}
@@ -170,13 +171,41 @@
 					padding: 5vw 0 0;
 					.formGroup{
 						width: 100%;
-					}
+          }
+          label {
+            font-size: 3vw;
+          }
+          input {
+            padding: 3vw;
+          }
 					button.btn{
 						width: 100%;
-						justify-content: center;
+            justify-content: center;
 					}
+          img {
+            max-width: 2vw;
+          }
+          .black-Button {
+            img:first-child {
+              max-width: 5vw;
+            }
+          }
+          .checkbox-group {
+            label {
+              &:before {
+                padding: 1.65vw;
+              }
+            }
+          }
 				}
-			}
+      }
+      button.btn {
+        padding: 3vw;
+        font-size: 3.5vw;
+        img {
+          width: 2vw;
+        }
+      }
 		}
 	}
 }
